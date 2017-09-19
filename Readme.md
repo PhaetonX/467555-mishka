@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anton Kuznecov](https://up.htmlacademy.ru/adaptive/12/user/467555).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
