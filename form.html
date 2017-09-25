@@ -6,12 +6,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
+      <div class="container">
         <a href="#" class="page-header__logo">
           <img src="http://placehold.it/150x100" alt="MISHKA" class="page-header__logo-image" width="86" height="35">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__tiggle" type="button">Open menu</button>
+          <button class="main-nav__toggle" type="button">Open menu</button>
           <ul class="main-nav__list site-menu">
             <li class="site-menu__item">
               <a href="index.html" class="site-menu__link">Каталог товаров</a>
@@ -32,17 +32,17 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__container">
-        <h1 class="page__title">Вязание на заказ</h1>
+      <div class="container">
+        <h1 class="page-main__title">Вязание на заказ</h1>
         <form class="form-order" action="https://echo.htmlacademy.ru" method="get">
-          <p class="form-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <p class="text form-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="form-order__section">
             <h2 class="form-order__section-title">ТИП</h2>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input class="form-order__input" type="radio" name="type" value="Аксессуар для интерьера">
               Аксессуар для интерьера
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input class="form-order__input" type="radio" name="type" value="Детская игрушка">
               Детская игрушка
             </label>
@@ -50,41 +50,41 @@
           <fieldset class="form-order__section">
             <h2 class="form-order__section-title">Цвет</h2>
             <label class="form-order__label">
-              <input type="checkbox" class="form-order__input" name="product-color__white" checked>
+              <input type="subtitle checkbox" class="form-order__input" name="product-color__white" checked>
               Белый
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input type="checkbox" class="form-order__input" name="product-color__grey" checked>
               Серый
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input type="checkbox" class="form-order__input" name="product-color__tiffany">
               «Тиффани»
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input type="checkbox" class="form-order__input" name="product-color__black">
               Черный
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input type="checkbox" class="form-order__input" name="product-color__pink">
               Розовый
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               <input type="checkbox" class="form-order__input" name="product-color__orange">
               Оранжевый
             </label>
           </fieldset>
           <fieldset class="form-order__section">
             <h2 class="form-order__section-title">ФИО</h2>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               Имя:
               <input class="form-order__input" type="text" name="name">
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               Фамилия:
               <input class="form-order__input" type="text" name="surname">
             </label>
-            <label class="form-order__label">
+            <label class="subtitle form-order__label">
               Отчество:
               <input class="form-order__input" type="text" name="patronymic">
             </label>
@@ -102,12 +102,12 @@
             <textarea name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <p class="form-order__description-required">*Поля обязательны для заполнения</p>
-          <button class="form-order__submit" type="submit">Отправить заказ</button>
+          <button class="button form-order__submit" type="submit">Отправить заказ</button>
         </form>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container">
+      <div class="container">
         <ul class="page-footer__social social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--inst"></a>inst</li>
