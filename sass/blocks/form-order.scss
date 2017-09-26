@@ -1,0 +1,28 @@
+.form-order__section {
+    border: none;
+}
+
+.form-order__section-title {
+    color: $downy;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: $open-sans;
+    line-height: 16px;
+}
+
+.form-order__input {
+    border: none;
+    border-bottom: 2px solid $black;
+    color: $grey-68;
+    letter-spacing: 0;
+    font-size: 17px;
+    font-family: $open-sans;
+    line-height: 18px;
+}
+
+.form-order__textarea {
+    height: 134px;
+    border: 2px solid $black;
+    resize: none;
+}
