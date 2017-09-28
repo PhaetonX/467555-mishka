@@ -5,9 +5,11 @@
   font-size: 27px;
   font-family: $open-sans;
   line-height: 30px;
+
   &__wrap {
     background-color: $seashell;
   }
+
   &__wrap--index {
     padding-top: 80px;
     height: 280px;

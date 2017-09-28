@@ -4,10 +4,12 @@
     padding: 0;
     list-style: none;
   }
+
   &__item {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+
   &__link {
     color: $white;
     text-decoration: none;
@@ -17,9 +19,11 @@
     font-family: $open-sans;
     line-height: 24px;
   }
+
   &__link--color-lighter {
     background-color: $downy;
   }
+
   &__link--color-darker {
     background-color: $fountain;
   }

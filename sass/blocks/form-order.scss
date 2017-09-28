@@ -1,5 +1,6 @@
 .form-order__section {
   border: none;
+
   &-title {
     color: $downy;
     letter-spacing: 0;
@@ -8,6 +9,7 @@
     font-family: $open-sans;
     line-height: 16px;
   }
+
   &__input {
     border: none;
     border-bottom: 2px solid $black;
@@ -17,6 +19,7 @@
     font-family: $open-sans;
     line-height: 18px;
   }
+
   &__textarea {
     height: 134px;
     border: 2px solid $black;
