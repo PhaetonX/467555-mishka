@@ -2,6 +2,7 @@
   &__container {
     margin: 0 auto;
     width: $mobile-width;
+
     @media (min-width: $tablet-width) {
       padding-right: $tablet-padding;
       padding-left: $tablet-padding;
@@ -14,8 +15,6 @@
     padding: 0;
     list-style: none;
 
-
-
     @media (min-width: $tablet-width) {
       display: -webkit-flex;
       display:     -ms-flex;
@@ -23,8 +22,8 @@
       flex-direction: row;
 
       flex-wrap: wrap;
-
     }
+
     @media (min-width: $desktop-width) {
       margin: 0 auto;
       width: 700px;

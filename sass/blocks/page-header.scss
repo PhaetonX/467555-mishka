@@ -9,8 +9,6 @@
     margin: 0 auto;
     width: $mobile-width;
 
-
-
     @media (min-width:$tablet-width ) {
       flex-direction: row;
       padding-right: $tablet-padding;
@@ -24,6 +22,7 @@
       width: $desktop-width;
     }
   }
+
   &__logo {
     align-self: center;
   }

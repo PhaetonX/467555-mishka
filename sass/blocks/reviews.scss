@@ -6,6 +6,7 @@
     flex-direction: column;
     margin: 0 auto;
     width: $mobile-width;
+
     @media (min-width: $tablet-width) {
       flex-direction: row;
       align-items: flex-start;
@@ -18,11 +19,13 @@
       order: 1;
     }
   }
+
   &__list {
     @media (min-width: $tablet-width) {
       order: 3;
     }
   }
+
   &__item {
     margin: 0;
     padding: 0;

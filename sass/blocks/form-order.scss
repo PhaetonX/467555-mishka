@@ -7,11 +7,13 @@
   padding-right: $mobile-padding;
   padding-left: $mobile-padding;
   width: $mobile-width;
+
   @media (min-width: $tablet-width) {
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
     width: $tablet-width;
   }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
@@ -19,9 +21,8 @@
 
 .form-order__section {
   display: -webkit-flex;
-display: -ms-flex;
-display: flex;
-
+  display:     -ms-flex;
+  display:         flex;
   width: $mobile-width;
   border: none;
 

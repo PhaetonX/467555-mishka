@@ -2,6 +2,7 @@
   &__container {
     margin: 0 auto;
     width: $mobile-width;
+
     @media (min-width: $tablet-width) {
       padding-right: $tablet-padding;
       padding-left: $tablet-padding;
@@ -26,6 +27,7 @@
     color: $grey-68;
     text-decoration: none;
   }
+
   &__write {
     width: 100%;
     text-align: center;
