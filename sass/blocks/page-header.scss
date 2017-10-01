@@ -1,0 +1,30 @@
+.page-header {
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  &__container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: $mobile-width;
+
+
+
+    @media (min-width:$tablet-width ) {
+      flex-direction: row;
+      padding-right: $tablet-padding;
+      padding-left: $tablet-padding;
+      width: $tablet-width;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: $desktop-padding;
+      padding-left: $desktop-padding;
+      width: $desktop-width;
+    }
+  }
+  &__logo {
+    align-self: center;
+  }
+}

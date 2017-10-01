@@ -1,4 +1,28 @@
 .reviews {
+  &__container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: $mobile-width;
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      align-items: flex-start;
+      width: $tablet-width;
+    }
+  }
+
+  &__title {
+    @media(min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+  &__list {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
   &__item {
     margin: 0;
     padding: 0;
@@ -10,5 +34,29 @@
 
   &__author-email {
     font-style: normal;
+  }
+
+  &__nav {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &__button {
+    width: 130px;
+  }
+
+  &__write {
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 167px;
+
+      order: 2;
+    }
   }
 }

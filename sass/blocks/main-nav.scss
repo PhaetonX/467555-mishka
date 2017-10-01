@@ -1,9 +1,15 @@
 .main-nav {
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: -webkit-flex;
+  display:     -ms-flex;
+  display:         flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: $mobile-width;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
+
 
   &__link {
     color: $black;
@@ -19,5 +25,28 @@
     padding-top: 27px;
     padding-bottom: 27px;
     border-top: 1px solid $grey;
+    text-align: center;
+  }
+  &__toggle {
+    margin-top: -30px;
+    width: 20px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+
+    align-self: flex-end;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+  &__user-menu {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+  &__site-menu {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 }

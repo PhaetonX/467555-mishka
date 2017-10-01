@@ -1,4 +1,40 @@
-.advantages__list {
-  margin: 0;
-  padding: 0;
+.advantages {
+  &__container {
+    margin: 0 auto;
+    width: $mobile-width;
+    @media (min-width: $tablet-width) {
+      padding-right: $tablet-padding;
+      padding-left: $tablet-padding;
+      width: $tablet-width;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+
+    @media (min-width: $tablet-width) {
+      display: -webkit-flex;
+      display:     -ms-flex;
+      display:         flex;
+      flex-direction: row;
+
+      flex-wrap: wrap;
+
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      width: 700px;
+    }
+  }
+  &__item {
+    @media(min-width: $tablet-width) {
+      width: 334px;
+
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -1,0 +1,7 @@
+.info-table {
+  border-collapse: collapse;
+
+  &__value {
+    border-bottom: 1px solid $grey;
+  }
+}

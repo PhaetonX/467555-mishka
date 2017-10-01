@@ -1,7 +1,26 @@
 .product-preview {
+  display: -webkit-flex;
+  display:     -ms-flex;
+  display:         flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+  }
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+  }
+  &__item {
+    @media (min-width: $tablet-width) {
+      display: -webkit-flex;
+      display:     -ms-flex;
+      display:         flex;
+    }
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+    }
+  }
 
   &__price {
     letter-spacing: 0;

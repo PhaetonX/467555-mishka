@@ -1,3 +1,48 @@
 .page-footer {
-  background-color: $seashell;
+  &__container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: $mobile-width;
+    background-color: $seashell;
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: $tablet-padding;
+      padding-left: $tablet-padding;
+      width: $tablet-width;
+    }
+    @media (min-width: $desktop-width) {
+      padding-right: $desktop-padding;
+padding-left: $desktop-padding;
+width: $desktop-width;
+
+    }
+  }
+
+  &__logo {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+  &__social {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    flex-wrap: wrap;
+    @media (min-width: $mobile-width) {
+    }
+  }
+  &__coopyright {
+    @media (min-width: $mobile-width) {
+      text-align: center;
+    }
+  }
 }
