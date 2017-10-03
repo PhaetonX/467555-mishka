@@ -1,7 +1,13 @@
 .info-table {
+  margin-bottom: 30px;
   border-collapse: collapse;
 
   &__value {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 28px;
+    padding-bottom: 8px;
     border-bottom: 1px solid $grey;
   }
 }

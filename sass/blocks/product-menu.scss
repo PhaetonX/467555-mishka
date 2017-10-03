@@ -20,9 +20,10 @@
   }
 
   &__item {
-    padding-top: 25px;
+    position: relative;
+    padding-top: 27px;
     padding-right: $mobile-padding;
-    padding-bottom: 25px;
+    padding-bottom: 31px;
     padding-left: $mobile-padding;
 
     @media (min-width: $tablet-width) {
@@ -35,6 +36,8 @@
   }
 
   &__link {
+    display: block;
+    max-width: 100px;
     color: $white;
     text-decoration: none;
     letter-spacing: 0;
@@ -51,4 +54,11 @@
   &__link--color-darker {
     background-color: $fountain;
   }
+}
+
+.product-menu__link--icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  fill: #3bb09d;
 }

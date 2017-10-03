@@ -1,9 +1,18 @@
 .contacts {
   &__list {
+    padding-bottom: 10px;
     @media (min-width: $tablet-width) {
     }
   }
-
+  &__value {
+    padding-right: 25px;
+    padding-bottom: 25px;
+    vertical-align: baseline;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: $open-sans;
+    line-height: 30px;
+  }
   &__email {
     color: $grey-68;
     text-decoration: none;
@@ -15,5 +24,13 @@
   }
   &__location {
     width: 320px;
+  }
+  & .page-subtitle {
+    padding-bottom: 6px;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: $open-sans;
+    line-height: 30px;
   }
 }

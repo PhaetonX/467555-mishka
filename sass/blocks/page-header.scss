@@ -2,16 +2,15 @@
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
   & .container {
-    padding-right: 0;
-    padding-left: 0;
-
+    margin-top: 21px;
+    margin-bottom: 30px;
+    // padding-right: 0;
+    // padding-left: 0;
     @media (min-width:$tablet-width ) {
       display: -webkit-flex;
       display:     -ms-flex;
       display:         flex;
     }
-
-
 
     @media (min-width: $desktop-width) {
     }
@@ -32,10 +31,14 @@
     height: 35px;
   }
   &__toggle {
-    width: 20px;
-    height: 14px;
+    display: block;
+    margin-top: -30px;
+    margin-left: 239px;
+    width: 21px;
+    height: 21px;
     border: none;
     background-color: transparent;
+    background-image: url("../img/icon-menu-close.svg");
 
     @media (min-width: $tablet-width) {
       display: none;

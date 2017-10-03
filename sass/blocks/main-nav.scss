@@ -1,5 +1,9 @@
 .main-nav {
+  display: none;
   margin-top: 30px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
   & .container {
     // padding-right: 0;
     // padding-left: 0;
@@ -14,8 +18,10 @@
 
 
   &__link {
-    margin-left: 74px;
+    position: relative;
+    padding-left: 45px;
     color: $black;
+    text-align: center;
     text-decoration: none;
     letter-spacing: 0;
     font-weight: 700;
@@ -26,17 +32,31 @@
 
   &__item {
     padding-top: 26px;
-    padding-bottom: 27px;
+    padding-bottom: 28px;
     border-top: 1px solid $grey;
-  }
-  &__user-menu {
-    @media (min-width: $tablet-width) {
-      order: 1;
+    &:hover .user-menu__link--icon {
+      opacity: 1;
+      fill: $downy;
+    }
+    &:active .user-menu__link--icon {
+      opacity: 0.3;
+      fill: $downy;
+    }
+    &__user-menu {
+      @media (min-width: $tablet-width) {
+        order: 1;
+      }
+    }
+    &__site-menu {
+      @media (min-width: $tablet-width) {
+        order: 2;
+      }
     }
   }
-  &__site-menu {
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
-  }
+}
+.user-menu__link--icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  opacity: 0.2;
 }

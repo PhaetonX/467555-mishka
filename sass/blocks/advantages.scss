@@ -1,4 +1,8 @@
 .advantages {
+  margin-bottom: 37px;
+  & .page-subtitle {
+    margin-bottom: 60px;
+  }
   &__list {
     margin: 0;
     padding: 0;
@@ -13,16 +17,32 @@
       flex-wrap: wrap;
     }
 
+
+
     @media (min-width: $desktop-width) {
       margin: 0 auto;
       width: 700px;
     }
   }
   &__item {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 52px;
+    &:last-child {
+      padding-bottom: 0;
+    }
     @media(min-width: $tablet-width) {
       width: 334px;
 
       flex-wrap: wrap;
     }
   }
+}
+
+
+.advantages__item--icon {
+  position: absolute;
+  top: -23px;
+  left: 4px;
+  fill: $downy;
 }
