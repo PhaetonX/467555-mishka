@@ -1,15 +1,4 @@
 .advantages {
-  &__container {
-    margin: 0 auto;
-    width: $mobile-width;
-
-    @media (min-width: $tablet-width) {
-      padding-right: $tablet-padding;
-      padding-left: $tablet-padding;
-      width: $tablet-width;
-    }
-  }
-
   &__list {
     margin: 0;
     padding: 0;

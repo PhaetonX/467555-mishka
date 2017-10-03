@@ -1,29 +1,44 @@
 .page-header {
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
-  &__container {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: $mobile-width;
+  & .container {
+    padding-right: 0;
+    padding-left: 0;
 
     @media (min-width:$tablet-width ) {
-      flex-direction: row;
-      padding-right: $tablet-padding;
-      padding-left: $tablet-padding;
-      width: $tablet-width;
+      display: -webkit-flex;
+      display:     -ms-flex;
+      display:         flex;
     }
 
+
+
     @media (min-width: $desktop-width) {
-      padding-right: $desktop-padding;
-      padding-left: $desktop-padding;
-      width: $desktop-width;
     }
   }
 
   &__logo {
-    align-self: center;
+    display: block;
+    height: 35px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &__logo-image {
+    width: 86px;
+    height: 35px;
+  }
+  &__toggle {
+    width: 20px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

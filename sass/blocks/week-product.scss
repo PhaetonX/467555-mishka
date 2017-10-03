@@ -1,5 +1,5 @@
 .week-product {
-  &__container {
+  & .container {
     @media (min-width: $mobile-width) {
       margin: 0 auto;
       width: $mobile-width;

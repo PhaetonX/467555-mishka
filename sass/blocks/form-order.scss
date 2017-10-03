@@ -1,13 +1,4 @@
 .form-order {
-  display: -webkit-flex;
-  display:     -ms-flex;
-  display:         flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-right: $mobile-padding;
-  padding-left: $mobile-padding;
-  width: $mobile-width;
-
   @media (min-width: $tablet-width) {
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
@@ -23,7 +14,6 @@
   display: -webkit-flex;
   display:     -ms-flex;
   display:         flex;
-  width: $mobile-width;
   border: none;
 
   &-title {
