@@ -17,23 +17,4 @@
       display: block;
     }
   }
-  &__social {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    flex-wrap: wrap;
-
-    @media (min-width: $mobile-width) {
-    }
-  }
-
-  &__coopyright {
-    @media (min-width: $mobile-width) {
-      text-align: center;
-    }
-  }
 }
