@@ -1,7 +1,7 @@
 .contacts {
   margin-bottom: 42px;
   &__list {
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     @media (min-width: $tablet-width) {
     }
   }
@@ -33,7 +33,6 @@
     line-height: 0;
   }
   & .page-subtitle {
-    padding-bottom: 6px;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 18px;

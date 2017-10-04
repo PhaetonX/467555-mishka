@@ -1,4 +1,5 @@
 .form-order {
+  margin-bottom: 55px;
   @media (min-width: $tablet-width) {
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
@@ -8,36 +9,152 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
+  &__description {
+    padding-top: 11px;
+    padding-bottom: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: $open-sans;
+    line-height: 24px;
+    &-required {
+      margin: 0;
+      margin-bottom: 33px;
+      padding: 0;
+      padding-top: 5px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  &__input {
+    display: none;
+    &-text {
+      margin-bottom: 22px;
+      padding-top: 15px;
+      padding-bottom: 14px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #000000;
+      letter-spacing: 0;
+      font-weight: 400;
+      font-size: 17px;
+      font-family: $open-sans;
+      line-height: 18px;
+    }
+  }
+  &__label {
+    padding-left: 63px;
+  }
+  &__label-radio {
+    position: relative;
+    padding-bottom: 20px;
+    &::before {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $grey-68;
+      border-radius: 50%;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $downy;
+      content: "";
+    }
+  }
+  &__label-checkbox {
+    position: relative;
+    padding-bottom: 40.5px;
+    &::before {
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 40px;
+      height: 41px;
+      border: 2px solid $grey-68;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 4px;
+      left: 9px;
+      width: 22px;
+      height: 16px;
+      background-image: url("../img/icon-tick.svg");
+      content: "";
+    }
+  }
+  &__textarea {
+    margin-top: 14px;
+    padding: 15px;
+    width: 100%;
+    height: 145px;
+    border: 2px solid $black;
+    border: none;
+    border: 2px solid $grey-68;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: $open-sans;
+    line-height: 18px;
+    resize: none;
+  }
+  &__submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .form-order__section {
   display: -webkit-flex;
   display:     -ms-flex;
   display:         flex;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
   border: none;
+  &:first-of-type {
+    margin-bottom: 22px;
+  }
 
   &-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 34px;
     color: $downy;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 17px;
     font-family: $open-sans;
     line-height: 16px;
+    &::after {
+      position: absolute;
+      top: 7px;
+      left: 62px;
+      width: 200px;
+      height: 1px;
+      background-color: $downy;
+      content: "";
+    }
+  }
+  &-title--fullname {
+    padding-bottom: 25px;
+  }
+  &-title--info {
+    padding-bottom: 12px;
   }
 
-  &__input {
-    border: none;
-    border-bottom: 2px solid $black;
-    color: $grey-68;
-    letter-spacing: 0;
-    font-size: 17px;
-    font-family: $open-sans;
-    line-height: 18px;
-  }
-
-  &__textarea {
-    height: 134px;
-    border: 2px solid $black;
-    resize: none;
+  &-grey {
+    // background-color: $grey;
+    // margin-bottom: 5px;
   }
 }

@@ -17,7 +17,11 @@
   & .page-title__container--index {
     background-color: transparent;
   }
-
+  & .page-title__container--catalog,
+  .page-title__container--form {
+    padding-top: 70px;
+    padding-bottom: 74px;
+  }
   &--index {
     margin: 0 auto;
     padding-top: 70px;
@@ -27,16 +31,19 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
-.page-subtitle {
-  letter-spacing: 0;
-  font-weight: 700;
-  font-size: 25px;
-  font-family: $open-sans;
-  line-height: 30px;
-}
+  &--catalog {
+    margin-bottom: 34px;
+  }
 
+  .page-subtitle {
+    letter-spacing: 0;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: $open-sans;
+    line-height: 30px;
+  }
+}
 .subtitle {
   color: $black;
   letter-spacing: 0;
