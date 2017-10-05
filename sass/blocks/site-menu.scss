@@ -1,12 +1,12 @@
 .site-menu {
-  display: -webkit-flex;
-  display:     -ms-flex;
-  display:         flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
-
+  &__link {
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: -webkit-flex;

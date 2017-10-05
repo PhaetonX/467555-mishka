@@ -1,7 +1,4 @@
 .main-nav {
-  display: none;
-
-  margin-top: 30px;
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -15,8 +12,10 @@
     display:     -ms-flex;
     display:         flex;
     flex-direction: row;
-  }
 
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
 
   &__link {
     position: relative;
@@ -29,6 +28,10 @@
     font-size: 17px;
     font-family: $open-sans;
     line-height: 24px;
+    @media(min-width: $tablet-width) {
+      // margin: 0;
+      // padding: 0;
+    }
   }
 
   &__item {
@@ -43,15 +46,10 @@
       opacity: 0.3;
       fill: $downy;
     }
-    &__user-menu {
-      @media (min-width: $tablet-width) {
-        order: 1;
-      }
-    }
-    &__site-menu {
-      @media (min-width: $tablet-width) {
-        order: 2;
-      }
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0;
+      border: none;
     }
   }
 }

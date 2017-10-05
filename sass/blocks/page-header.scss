@@ -3,13 +3,14 @@
   border-bottom: 1px solid $grey;
   & .container {
     margin-top: 21px;
-    margin-bottom: 30px;
-    // padding-right: 0;
-    // padding-left: 0;
+    margin-bottom: 21px;
     @media (min-width:$tablet-width ) {
       display: -webkit-flex;
       display:     -ms-flex;
       display:         flex;
+      justify-content: space-between;
+
+      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
@@ -18,11 +19,12 @@
 
   &__logo {
     display: block;
+    margin-bottom: 21px;
     height: 35px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      text-align: left;
+      margin-bottom: 10px;
     }
   }
 
@@ -31,16 +33,42 @@
     height: 35px;
   }
   &__toggle {
-    display: block;
-    margin-top: -30px;
-    margin-left: 239px;
-    width: 21px;
-    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 31px;
+    width: 20px;
+    height: 14px;
     border: none;
     background-color: transparent;
-    background-image: url("../img/icon-menu-close.svg");
+    background-image: url("../img/icon-menu-open.svg");
 
+    &--closed {
+      top: 7px;
+      right: 31px;
+      width: 21px;
+      height: 21px;
+      background-image: url("../img/icon-menu-close.svg");
+    }
     @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    @media(min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+  &__user-menu {
+    @media(min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+  @media(max-width: $tablet-width) {
+    &__site-menu--closed {
+      display: none;
+    }
+    &__user-menu--closed {
       display: none;
     }
   }

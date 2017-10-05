@@ -1,13 +1,19 @@
 .user-menu {
-  display: -webkit-flex;
-  display:     -ms-flex;
-  display:         flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+  }
+  &__link {
+    &-text-hidden {
+      @media(min-width: $tablet-width) {
+        overflow: hidden;
+        color: transparent;
+        text-indent: 100%;
+        white-space: nowrap;
+      }
+    }
   }
 }
