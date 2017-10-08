@@ -11,8 +11,11 @@
     display:     -ms-flex;
     display:         flex;
     flex-direction: column;
-    padding-left: 127px;
-    width: 100%;
+    @media(min-width: $tablet-width) {
+      padding-left: 127px;
+      width: 100%;
+    }
+
 
     @media(min-width:$tablet-width ) {
       padding-top: 60px;
@@ -27,18 +30,24 @@
     }
 
     &--fullname {
-      padding-top: 40px;
-      padding-right: 50px;
-      width: 100%;
+      // padding-top: 40px;
+
+      @media(min-width: $tablet-width) {
+        padding-top: 40px;
+        padding-right: 50px;
+        width: 100%;
+      }
     }
     &--wrapper {
-      display: -webkit-flex;
-      display:     -ms-flex;
-      display:         flex;
-      align-items: baseline;
-      padding: 0;
-      padding-right: 50px;
-      width: 100%;
+      @media(min-width: $tablet-width) {
+        display: -webkit-flex;
+        display:     -ms-flex;
+        display:         flex;
+        align-items: baseline;
+        padding: 0;
+        padding-right: 50px;
+        width: 100%;
+      }
     }
   }
   &__description {
@@ -219,7 +228,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
     color: $downy;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -228,6 +237,7 @@
     font-family: $open-sans;
     line-height: 16px;
     @media(min-width: $tablet-width) {
+      padding-bottom: 34px;
       padding-left: 50px;
     }
 
@@ -245,19 +255,27 @@
     }
   }
   &-title--fullname {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
+    @media(min-width: $tablet-width) {
+      padding-bottom: 25px;
+    }
   }
   &-title--info {
-    padding-bottom: 12px;
+    padding-bottom: 14px;
+    @media(min-width: $tablet-width) {
+      padding-bottom: 12px;
+    }
   }
 
   &-grey {
     background-color: $grey;
   }
   &--double {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
-    flex-direction: column;
+    @media(min-width: $tablet-width) {
+      display: -webkit-flex;
+      display:     -ms-flex;
+      display:         flex;
+      flex-direction: column;
+    }
   }
 }
