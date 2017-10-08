@@ -77,9 +77,9 @@
         <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="MISHKA" class="page-header__logo-image" width="86" height="35">
         </a>
-        <button class="page-header__toggle" type="button"></button>
+        <button class="page-header__toggle page-header__toggle--closed" type="button"></button>
         <nav class="page-header__nav main-nav">
-          <ul class="page-header__site-menu page-header__site-menu--closed site-menu">
+          <ul class="page-header__site-menu site-menu">
             <li class="main-nav__item site-menu__item">
               <a href="catalog.html" class="main-nav__link site-menu__link">Каталог товаров</a>
             </li>
@@ -88,7 +88,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="page-header__user-menu page-header__user-menu--closed main-nav__user-menu user-menu">
+        <ul class="page-header__user-menu main-nav__user-menu user-menu">
           <li class="main-nav__item user-menu__item">
             <a href="" class="main-nav__link user-menu__link user-menu__link-text-hidden">Поиск по сайту
               <svg class="user-menu__link--icon user-menu__link--icon-search" width="18" height="18">
@@ -118,14 +118,14 @@
         <div class="container">
           <ul class="product-menu__list">
             <li class="product-menu__item product-menu__link--color-lighter">
-              <a href="#" class="product-menu__link">Предметы интерьера
+              <a href="#" class="product-menu__link"><span class="product-menu__link-text">Предметы интерьера</span>
                 <svg class="product-menu__link--icon" width="40" height="62">
                   <use xlink:href="#icon-interior"></use>
                 </svg>
               </a>
             </li>
             <li class="product-menu__item product-menu__link--color-darker">
-              <a href="#" class="product-menu__link">Детские игрушки
+              <a href="#" class="product-menu__link"><span class="product-menu__link-text">Детские игрушки</span>
                 <svg class="product-menu__link--icon" width="60" height="60">
                   <use xlink:href="#icon-toy"></use>
                 </svg>
@@ -142,18 +142,18 @@
           </div>
           <div class="week-product__description">
             <p class="text week-product-description-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="info-table">
-              <tr class="info-table__item">
-                <td class="text info-table__value">Цвет:</td>
-                <td class="text info-table__value">«Тиффани»/серый</td>
+            <table class="week-product__info-table">
+              <tr class="week-product__info-table--item">
+                <td class="text week-product__info-table--value">Цвет:</td>
+                <td class="text week-product__info-table--value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="week-product__info-table--item">
+                <td class="text week-product__info-table--value">Диаметр:</td>
+                <td class="text week-product__info-table--value">25 см</td>
               </tr>
               <tr class="info-table__item">
-                <td class="text info-table__value">Диаметр:</td>
-                <td class="text info-table__value">25 см</td>
-              </tr>
-              <tr class="info-table__item">
-                <td class="text info-table__value">Высота:</td>
-                <td class="text info-table__value">15 см</td>
+                <td class="text week-product__info-table--value">Высота:</td>
+                <td class="text week-product__info-table--value">15 см</td>
               </tr>
             </table>
             <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="week-product__image">
@@ -186,7 +186,7 @@
                 <use xlink:href="#icon-ball"></use>
               </svg>
             </li>
-            <li class="subtitle advantages__item">Поддержка отечественного производителя
+            <li class="subtitle advantages__item">Поддержка&nbsp;отечественного производителя
               <svg class="advantages__item--icon" width="54" height="23">
                 <use xlink:href="#icon-rocket"></use>
               </svg>
@@ -226,19 +226,19 @@
       </section>
       <section class="contacts">
         <div class="container">
-          <h3 class="page-subtitle">Контакты</h3>
-          <table class="contacts__list">
-            <tr class="contacts__item">
-              <td class="text contacts__value">e-mail</td>
-              <td class="text contacts__value">
+          <h2 class="page-subtitle">Контакты</h2>
+          <div class="contacts__list">
+            <p class="contacts__item">
+              <b class="contacts__item-text contacts__item-name">e-mail:</b>
+              <b class="contacts__item-text contacts__item-value">
                 <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </td>
-            </tr>
-            <tr class="contacts__item">
-              <td class="text contacts__value">адрес:</td>
-              <td class="text contacts__value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
-            </tr>
-          </table>
+                </b>
+              </p>
+            <p class="contacts__item">
+              <b class="contacts__item-text contacts__item-name">адрес:</b>
+              <b class="contacts__item-text contacts__item-value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</b>
+            </p>
+          </div>
         </div>
         <div class="contacts__location">
           <img class="contacts__location-map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург,ул. Большая Конюшенная,д. 19/8, офис 101">

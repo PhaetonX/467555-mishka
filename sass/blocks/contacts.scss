@@ -1,29 +1,80 @@
 .contacts {
-  margin-bottom: 42px;
-  &__list {
-    padding-bottom: 14px;
-    @media (min-width: $tablet-width) {
+  & .container {
+    @media(min-width: $desktop-width) {
+      padding-left: 222px;
     }
   }
-  &__value {
-    padding-right: 25px;
-    padding-bottom: 25px;
-    vertical-align: baseline;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    margin-left: auto;
+
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      display: -webkit-flex;
+      display:     -ms-flex;
+      display:         flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      flex-wrap: wrap;
+    }
+    @media(min-width: $desktop-width) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
     letter-spacing: 0;
+    @media(min-width: $desktop-width) {
+      justify-content: flex-start;
+    }
+  }
+  &__item-text {
+    color: $grey-68;
     font-weight: 400;
+    font-size: 15px;
     font-family: $open-sans;
     line-height: 30px;
+    @media(min-width: $tablet-width) {
+      font-size: 17px;
+    }
   }
+  &__item-name {
+    @media(min-width: $tablet-width) {
+      padding-right: 23px;
+    }
+  }
+  &__item-value {
+    width: 183px;
+    @media(min-width: $tablet-width) {
+      width: 258px;
+    }
+  }
+
   &__email {
     color: $grey-68;
     text-decoration: none;
   }
 
   &__write {
-    display: block;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: center;
     margin: 0 auto;
     width: 260px;
-    text-align: center;
+    @media (min-width: $tablet-width) {
+      width: 230px;
+    }
   }
   &__location {
     position: relative;
@@ -33,10 +84,20 @@
     line-height: 0;
   }
   & .page-subtitle {
+    margin-bottom: 42px;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 18px;
     font-family: $open-sans;
     line-height: 30px;
+    @media(min-width: $tablet-width) {
+      margin-bottom: 45px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    @media(min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }
