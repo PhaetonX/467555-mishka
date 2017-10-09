@@ -6,13 +6,11 @@
     margin-top: 21px;
     margin-bottom: 21px;
 
-    @media (min-width:$tablet-width ) {
+    @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
 
       flex-wrap: wrap;
-    }
-    @media (min-width: $desktop-width) {
     }
   }
 
@@ -56,21 +54,22 @@
   }
 
   &__nav {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       order: 2;
     }
   }
 
   &__user-menu {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       order: 1;
     }
   }
 
-  @media(max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     &__site-menu--closed {
       display: none;
     }
+
     &__user-menu--closed {
       display: none;
     }

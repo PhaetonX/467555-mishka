@@ -11,9 +11,6 @@
       justify-content: space-between;
       margin-bottom: 17px;
       text-align: center;
-
-      @media (min-width: $desktop-width) {
-      }
     }
   }
 
@@ -52,14 +49,9 @@
   }
 
   &__description {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     flex-direction: column;
     padding-bottom: 5px;
-
-    @media (min-width: $desktop-width) {
-    }
 
     &__info-table {
       margin-bottom: 30px;
@@ -129,7 +121,6 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      width: auto;
       width: 289px;
     }
   }

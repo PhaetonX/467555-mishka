@@ -1,5 +1,6 @@
 .reviews {
   margin-bottom: 90px;
+
   & .container {
     display: flex;
     flex-direction: column;
@@ -10,9 +11,6 @@
       justify-content: space-between;
 
       flex-wrap: wrap;
-    }
-
-    @media (min-width: $desktop-width) {
     }
   }
 
@@ -90,8 +88,6 @@
       left: 40px;
     }
   }
-
-
 
   &__button {
     position: relative;
