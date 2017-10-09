@@ -1,4 +1,7 @@
 .product-menu {
+  @media(min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
   @media(min-width: $desktop-width) {
     margin-bottom: 103px;
   }

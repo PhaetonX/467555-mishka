@@ -1,9 +1,22 @@
 .contacts {
+  margin-bottom: 42px;
+  @media(min-width: $desktop-width) {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: $desktop-width;
+    // height: 633px;
+
+    flex-wrap: wrap;
+  }
   & .container {
     @media(min-width: $desktop-width) {
-      padding-left: 222px;
+      width: auto;
     }
   }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -75,6 +88,11 @@
     @media (min-width: $tablet-width) {
       width: 230px;
     }
+    @media(min-width: $desktop-width) {
+      margin: 0;
+      margin-top: -150px;
+      margin-left: 225px;
+    }
   }
   &__location {
     position: relative;
@@ -82,9 +100,13 @@
     justify-content: center;
     padding-bottom: 39px;
     line-height: 0;
+    @media(min-width: $desktop-width) {
+      width: 525px;
+      height: 528px;
+    }
   }
   & .page-subtitle {
-    margin-bottom: 42px;
+    margin-bottom: 23px;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 18px;

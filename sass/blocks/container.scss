@@ -18,4 +18,11 @@
     padding-left: $desktop-padding;
     width: $desktop-width;
   }
+  &--content {
+    @media(min-width: $desktop-width) {
+      margin: 0 auto;
+      padding-right: $desktop-padding;
+      padding-left: 222px;
+    }
+  }
 }
