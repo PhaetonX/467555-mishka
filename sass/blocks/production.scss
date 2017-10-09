@@ -1,6 +1,7 @@
 .production {
   margin-bottom: 38px;
   & .container {
+  	
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
