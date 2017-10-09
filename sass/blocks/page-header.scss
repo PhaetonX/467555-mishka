@@ -1,9 +1,11 @@
 .page-header {
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
+
   & .container {
     margin-top: 21px;
     margin-bottom: 21px;
+
     @media (min-width:$tablet-width ) {
       display: flex;
       justify-content: space-between;
@@ -39,6 +41,7 @@
     border: none;
     background-color: transparent;
     background-image: url("../img/icon-menu-open.svg");
+
     &--closed {
       top: 7px;
       right: 31px;
@@ -46,6 +49,7 @@
       height: 21px;
       background-image: url("../img/icon-menu-close.svg");
     }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -62,6 +66,7 @@
       order: 1;
     }
   }
+
   @media(max-width: $tablet-width) {
     &__site-menu--closed {
       display: none;

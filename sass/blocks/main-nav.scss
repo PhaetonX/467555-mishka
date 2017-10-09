@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -27,14 +28,17 @@
     padding-top: 26px;
     padding-bottom: 28px;
     border-top: 1px solid $grey;
+
     &:hover .user-menu__link--icon {
       opacity: 1;
       fill: $downy;
     }
+
     &:active .user-menu__link--icon {
       opacity: 0.3;
       fill: $downy;
     }
+
     @media (min-width: $tablet-width) {
       margin: 0;
       padding: 0;

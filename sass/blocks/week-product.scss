@@ -1,13 +1,9 @@
 .week-product {
   margin-bottom: 70px;
-  & .container {
-    @media (min-width: $desktop-width) {
-    }
-  }
-
 
   &__title {
     padding-bottom: 5px;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -15,6 +11,7 @@
       justify-content: space-between;
       margin-bottom: 17px;
       text-align: center;
+
       @media (min-width: $desktop-width) {
       }
     }
@@ -33,11 +30,13 @@
     line-height: 20px;
 
     flex-wrap: wrap;
+
     @media (min-width: $tablet-width) {
       padding-top: 16px;
       padding-right: 25px;
       width: 98px;
     }
+
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 18px;
@@ -58,12 +57,14 @@
     display:         flex;
     flex-direction: column;
     padding-bottom: 5px;
+
     @media (min-width: $desktop-width) {
     }
 
     &__info-table {
       margin-bottom: 30px;
       border-collapse: collapse;
+
       &--value {
         margin: 0;
         padding: 0;
@@ -78,6 +79,7 @@
   &__info-table {
     margin-bottom: 30px;
     border-collapse: collapse;
+
     @media (min-width: $desktop-width) {
       margin-bottom: 85px;
     }
@@ -94,6 +96,7 @@
 
   &__image {
     margin-bottom: 23px;
+
     @media (min-width: $tablet-width) {
       position: absolute;
 
@@ -110,6 +113,7 @@
     line-height: 24px;
 
     align-self: center;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 36px;
       padding-top: 26px;
@@ -123,6 +127,7 @@
 
   &__order {
     text-align: center;
+
     @media (min-width: $tablet-width) {
       width: auto;
       width: 289px;
@@ -132,11 +137,13 @@
 
 .week-product-description-text {
   padding-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
     width: 285px;
     font-size: 17px;
     line-height: 30px;
+
     @media (min-width: $desktop-width) {
       margin-bottom: 47px;
     }
