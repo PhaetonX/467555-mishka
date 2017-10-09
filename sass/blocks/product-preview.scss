@@ -1,4 +1,5 @@
 .product-preview {
+<<<<<<< HEAD
   display: -webkit-flex;
   display:     -ms-flex;
   display:         flex;
@@ -75,12 +76,19 @@
     }
   }
 
+=======
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
   &__price {
     letter-spacing: 0;
     font-weight: 700;
     font-size: 15px;
     font-family: $open-sans;
     line-height: 24px;
+<<<<<<< HEAD
     @media(min-width: $tablet-width) {
       font-size: 17px;
       line-height: 24px;
@@ -88,10 +96,16 @@
   }
 
   &__value {
+=======
+  }
+
+  &__info {
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
     font-weight: 400;
     font-size: 13px;
     font-family: $open-sans;
     line-height: 30px;
+<<<<<<< HEAD
 
     @media(min-width: $tablet-width) {
       font-size: 15px;
@@ -122,3 +136,12 @@
 .product-preview__title-icon {
   position: absolute;
 }
+=======
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    padding: 0;
+  }
+}
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835

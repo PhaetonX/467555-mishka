@@ -1,4 +1,5 @@
 .week-product {
+<<<<<<< HEAD
   margin-bottom: 70px;
   & .container {
     @media (min-width: $desktop-width) {
@@ -28,6 +29,9 @@
     display:         flex;
     margin: 0;
     padding: 0;
+=======
+  &__title-description {
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
     color: $downy;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -35,6 +39,7 @@
     font-size: 17px;
     font-family: $open-sans;
     line-height: 20px;
+<<<<<<< HEAD
 
     flex-wrap: wrap;
     @media(min-width: $tablet-width) {
@@ -104,11 +109,17 @@
 
   &__price {
     margin-bottom: 29px;
+=======
+  }
+
+  &__price {
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
     color: $grey-68;
     font-weight: 700;
     font-size: 17px;
     font-family: $open-sans;
     line-height: 24px;
+<<<<<<< HEAD
 
     align-self: center;
 
@@ -145,5 +156,7 @@
     @media(min-width: $desktop-width) {
       margin-bottom: 47px;
     }
+=======
+>>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
   }
 }
