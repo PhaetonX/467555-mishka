@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .page-title {
   &__text {
     margin: 0;
@@ -36,28 +35,10 @@
     padding-top: 70px;
     height: 280px;
     background-color: transparent;
-=======
-.title {
-  color: $black;
-  letter-spacing: 0;
-  font-weight: 700;
-  font-size: 27px;
-  font-family: $open-sans;
-  line-height: 30px;
-
-  &__wrap {
-    background-color: $seashell;
-  }
-
-  &__wrap--index {
-    padding-top: 80px;
-    height: 280px;
->>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
   }
-<<<<<<< HEAD
 
   &--catalog {
     margin-bottom: 34px;
@@ -91,23 +72,4 @@
       line-height: 57px;
     }
   }
-=======
-}
-
-.page-subtitle {
-  letter-spacing: 0;
-  font-weight: 700;
-  font-size: 25px;
-  font-family: $open-sans;
-  line-height: 30px;
-}
-
-.subtitle {
-  color: $black;
-  letter-spacing: 0;
-  font-weight: 700;
-  font-size: 17px;
-  font-family: $open-sans;
-  line-height: 20px;
->>>>>>> c6c1c2944a7a8ad7122a2f7582925a27d5ae8835
 }
