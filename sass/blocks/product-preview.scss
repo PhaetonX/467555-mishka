@@ -1,17 +1,11 @@
 .product-preview {
-  display: -webkit-flex;
-  display:     -ms-flex;
-  display:         flex;
+  display: flex;
   flex-direction: column;
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-  }
-
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -26,19 +20,18 @@
       align-items: flex-start;
       margin-bottom: 50px;
     }
-
     @media (min-width: $desktop-width) {
       flex-direction: column;
     }
   }
+
   &__wrapper {
-    @media(min-width: $tablet-width) {
-      display: -webkit-flex;
-      display:     -ms-flex;
-      display:         flex;
+    @media (min-width: $tablet-width) {
+      display: flex;
       flex-direction: column;
     }
   }
+
   &__info {
     margin-top: 22px;
     margin-left: 28px;
@@ -48,29 +41,28 @@
       width: 240px;
     }
   }
+
   &__img {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 333px;
       height: 334px;
     }
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 316px;
       height: 462px;
     }
   }
+
   &__buy {
     position: relative;
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     justify-content: space-between;
     margin-left: 28px;
     padding-top: 22px;
     padding-bottom: 26px;
     width: 205px;
     border-top: 1px solid $grey;
-    @media(min-width: $tablet-width) {
-      // margin-top: 164px;
+    @media (min-width: $tablet-width) {
       width: 275px;
     }
   }
@@ -81,7 +73,7 @@
     font-size: 15px;
     font-family: $open-sans;
     line-height: 24px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 17px;
       line-height: 24px;
     }
@@ -92,8 +84,7 @@
     font-size: 13px;
     font-family: $open-sans;
     line-height: 30px;
-
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 15px;
       line-height: 30px;
     }
@@ -106,7 +97,7 @@
     font-size: 17px;
     font-family: $open-sans;
     line-height: 24px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 24px;
     }

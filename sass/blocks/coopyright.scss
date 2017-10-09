@@ -1,10 +1,9 @@
 .coopyright {
   padding-top: 20px;
   padding-bottom: 20px;
+
   &__link {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     align-items: center;
     padding-right: 20px;
     padding-left: 40px;
@@ -16,6 +15,7 @@
     font-family: $open-sans;
     line-height: 18px;
   }
+
   &__text {
     padding-right: 26px;
   }

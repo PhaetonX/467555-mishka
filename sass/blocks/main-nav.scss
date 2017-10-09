@@ -2,15 +2,8 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
-  & .container {
-    // padding-right: 0;
-    // padding-left: 0;
-  }
-
   @media (min-width: $tablet-width) {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     flex-direction: row;
 
     flex-wrap: wrap;
@@ -28,10 +21,6 @@
     font-size: 17px;
     font-family: $open-sans;
     line-height: 24px;
-    @media(min-width: $tablet-width) {
-      // margin: 0;
-      // padding: 0;
-    }
   }
 
   &__item {
@@ -53,8 +42,6 @@
     }
   }
 }
-
-
 
 .user-menu__link--icon {
   position: absolute;

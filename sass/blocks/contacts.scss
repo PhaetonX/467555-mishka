@@ -1,18 +1,16 @@
 .contacts {
   margin-bottom: 42px;
   @media(min-width: $desktop-width) {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     align-items: flex-start;
     margin: 0 auto;
     width: $desktop-width;
-    // height: 633px;
 
     flex-wrap: wrap;
   }
+
   & .container {
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       width: auto;
     }
   }
@@ -24,51 +22,50 @@
     margin-left: auto;
 
     flex-shrink: 0;
-
     @media (min-width: $tablet-width) {
-      display: -webkit-flex;
-      display:     -ms-flex;
-      display:         flex;
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
 
       flex-wrap: wrap;
     }
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       flex-direction: column;
     }
   }
+
   &__item {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     justify-content: space-between;
     margin: 0;
     margin-bottom: 31px;
     padding: 0;
     letter-spacing: 0;
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       justify-content: flex-start;
     }
   }
+
   &__item-text {
     color: $grey-68;
     font-weight: 400;
     font-size: 15px;
     font-family: $open-sans;
     line-height: 30px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 17px;
     }
   }
+
   &__item-name {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-right: 23px;
     }
   }
+
   &__item-value {
     width: 183px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 258px;
     }
   }
@@ -79,32 +76,32 @@
   }
 
   &__write {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 260px;
     @media (min-width: $tablet-width) {
       width: 230px;
     }
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       margin: 0;
       margin-top: -150px;
       margin-left: 225px;
     }
   }
+
   &__location {
     position: relative;
     display: flex;
     justify-content: center;
     padding-bottom: 39px;
     line-height: 0;
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 525px;
       height: 528px;
     }
   }
+
   & .page-subtitle {
     margin-bottom: 23px;
     letter-spacing: 0;
@@ -112,12 +109,12 @@
     font-size: 18px;
     font-family: $open-sans;
     line-height: 30px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 45px;
       font-size: 43px;
       line-height: 50px;
     }
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: 53px;
       line-height: 57px;
     }

@@ -1,18 +1,15 @@
 .page-footer {
   & .container {
     background-color: $seashell;
-
     @media (min-width: $tablet-width) {
-      display: -webkit-flex;
-      display:     -ms-flex;
-      display:         flex;
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
   }
+
   &__logo {
     display: none;
-
     @media (min-width: $tablet-width) {
       display: block;
     }

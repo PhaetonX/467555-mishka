@@ -4,22 +4,19 @@
   padding-right: $mobile-padding;
   padding-left: $mobile-padding;
   width: $mobile-width;
-
-
-
   @media (min-width: $tablet-width) {
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
     width: $tablet-width;
   }
-
   @media (min-width: $desktop-width) {
     padding-right: $desktop-padding;
     padding-left: $desktop-padding;
     width: $desktop-width;
   }
+
   &--content {
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       margin: 0 auto;
       padding-right: $desktop-padding;
       padding-left: 222px;

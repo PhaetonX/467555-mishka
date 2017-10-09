@@ -8,11 +8,11 @@
     font-size: 27px;
     font-family: $open-sans;
     line-height: 30px;
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 43px;
       line-height: 50px;
     }
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: 53px;
       line-height: 57px;
     }
@@ -25,11 +25,13 @@
   & .page-title__container--index {
     background-color: transparent;
   }
+
   & .page-title__container--catalog,
   .page-title__container--form {
     padding-top: 70px;
     padding-bottom: 74px;
   }
+
   &--index {
     margin: 0 auto;
     padding-top: 70px;
@@ -44,6 +46,7 @@
     margin-bottom: 34px;
   }
 }
+
 .subtitle {
   color: $black;
   letter-spacing: 0;
@@ -51,7 +54,7 @@
   font-size: 17px;
   font-family: $open-sans;
   line-height: 20px;
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
   }
@@ -63,11 +66,11 @@
   font-size: 25px;
   font-family: $open-sans;
   line-height: 30px;
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 72px;
     font-size: 43px;
     line-height: 50px;
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: 53px;
       line-height: 57px;
     }
