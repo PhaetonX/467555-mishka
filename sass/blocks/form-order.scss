@@ -310,7 +310,9 @@
   }
 
   &-grey {
-    background-color: $grey;
+    @media (min-width: $tablet-width) {
+      background-color: $grey;
+    }
   }
 
   &--double {
@@ -321,10 +323,11 @@
   }
 
   &--item {
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 127px;
     width: 100%;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 127px;
+    }
   }
 }
