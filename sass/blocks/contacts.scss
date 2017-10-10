@@ -16,9 +16,7 @@
   }
 
   & .container {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     flex-direction: column;
 
     flex-wrap: wrap;
@@ -69,7 +67,7 @@
     padding: 0;
     letter-spacing: 0;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 50px;
     }
 
@@ -171,14 +169,14 @@
     font-family: $open-sans;
     line-height: 30px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       &::after {
         position: absolute;
         top: -14px;
         right: 4px;
         width: 46px;
         height: 81px;
-        background: url(../img/icon-flag.svg);
+        background: url("../img/icon-flag.svg");
         content: "";
 
         @media (min-width: $desktop-width) {

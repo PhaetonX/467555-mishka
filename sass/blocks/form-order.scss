@@ -70,7 +70,8 @@
       padding-top: 5px;
       font-size: 14px;
       line-height: 16px;
-      @media(min-width: $tablet-width) {
+
+      @media (min-width: $tablet-width) {
         order: 1;
       }
     }
@@ -222,12 +223,14 @@
     width: 100%;
     background-color: transparent;
     text-align: center;
+
     @media (min-width: $tablet-width) {
       width: 230px;
     }
   }
+
   &__footer {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
       align-items: baseline;
@@ -318,6 +321,7 @@
       flex-direction: column;
     }
   }
+
   &--item {
     top: 50px;
     display: flex;

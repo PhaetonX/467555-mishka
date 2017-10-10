@@ -24,7 +24,8 @@
       margin-top: 21px;
       margin-bottom: 10px;
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       order: 2;
     }
   }
@@ -73,7 +74,7 @@
 
       order: 4;
 
-      @media(min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         margin-top: 20px;
       }
     }
@@ -84,7 +85,7 @@
       order: 3;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       order: 1;
     }
   }
