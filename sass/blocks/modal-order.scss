@@ -16,6 +16,7 @@
     margin: 0 auto;
     width: 570px;
   }
+
   & .container {
     @media (min-width: $tablet-width) {
       width: 455px;
@@ -27,14 +28,17 @@
     padding-top: 10px;
     text-align: center;
     text-transform: uppercase;
+
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 57px;
     }
   }
+
   & .text {
     margin-bottom: 27px;
     text-align: center;
+
     @media (min-width: $tablet-width) {
       margin-top: 11px;
       margin-bottom: 25px;
@@ -42,15 +46,18 @@
       line-height: 30px;
     }
   }
+
   &__list {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     margin-bottom: 32px;
   }
+
   &__input {
     display: none;
   }
+
   &__label {
     display: flex;
     width: 80px;

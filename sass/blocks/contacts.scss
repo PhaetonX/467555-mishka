@@ -21,9 +21,6 @@
 
     flex-wrap: wrap;
 
-    @media (min-width: $tablet-width) {
-    }
-
     @media (min-width: $desktop-width) {
       height: 630px;
     }
@@ -54,7 +51,7 @@
   &__info {
     order: 1;
 
-    @media (min-width:$desktop-width ) {
+    @media (min-width: $desktop-width) {
       padding-top: 27px;
     }
   }
@@ -141,18 +138,22 @@
       margin: 0 -50px;
       padding-bottom: 55px;
     }
+
     @media (min-width: $desktop-width) {
       width: 525px;
       height: 528px;
     }
+
     &--picture {
       display: none;
     }
+
     &--iframe {
       @media (min-width: $tablet-width) {
         width: 768px;
         height: 457px;
       }
+
       @media (min-width: $desktop-width) {
         width: 525px;
         height: 457px;
