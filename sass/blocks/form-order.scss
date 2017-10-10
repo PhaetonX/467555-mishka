@@ -324,6 +324,7 @@
 
   &--item {
     width: 100%;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
