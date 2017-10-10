@@ -1,4 +1,9 @@
 .advantages {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-top: 12px;
+  }
+
   & .page-subtitle {
     margin-bottom: 55px;
 
@@ -15,6 +20,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
+
       flex-wrap: wrap;
     }
   }
@@ -64,7 +70,7 @@
 
 .advantages__item--icon {
   position: absolute;
-  top: -23px;
-  left: 4px;
+  top: -25px;
+  left: 7px;
   fill: $downy;
 }

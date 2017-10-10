@@ -1,6 +1,11 @@
 .contacts {
   margin-bottom: 42px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding-top: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
@@ -11,8 +16,18 @@
   }
 
   & .container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+    }
+
     @media (min-width: $desktop-width) {
-      width: auto;
+      height: 630px;
     }
   }
 
@@ -34,6 +49,15 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: column;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__info {
+    order: 1;
+
+    @media (min-width:$desktop-width ) {
+      padding-top: 27px;
     }
   }
 
@@ -45,8 +69,13 @@
     padding: 0;
     letter-spacing: 0;
 
+    @media(min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+
     @media (min-width: $desktop-width) {
       justify-content: flex-start;
+      margin-bottom: 30px;
     }
   }
 
@@ -87,14 +116,16 @@
     margin: 0 auto;
     width: 260px;
 
+    order: 3;
+
     @media (min-width: $tablet-width) {
       width: 230px;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0;
-      margin-top: -150px;
-      margin-left: 225px;
+
+      order: 2;
     }
   }
 
@@ -102,16 +133,37 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 0 -30px;
     padding-bottom: 39px;
     line-height: 0;
 
+    order: 2;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 -50px;
+      padding-bottom: 55px;
+    }
     @media (min-width: $desktop-width) {
       width: 525px;
       height: 528px;
     }
+    &--picture {
+      display: none;
+    }
+    &--iframe {
+      @media (min-width: $tablet-width) {
+        width: 768px;
+        height: 457px;
+      }
+      @media (min-width: $desktop-width) {
+        width: 525px;
+        height: 457px;
+      }
+    }
   }
 
   & .page-subtitle {
+    position: relative;
     margin-bottom: 23px;
     letter-spacing: 0;
     font-weight: 700;
@@ -119,8 +171,25 @@
     font-family: $open-sans;
     line-height: 30px;
 
+    @media(min-width: $tablet-width) {
+      &::after {
+        position: absolute;
+        top: -14px;
+        right: 4px;
+        width: 46px;
+        height: 81px;
+        background: url(../img/icon-flag.svg);
+        content: "";
+
+        @media (min-width: $desktop-width) {
+          top: -9px;
+          left: -109px;
+        }
+      }
+    }
+
     @media (min-width: $tablet-width) {
-      margin-bottom: 45px;
+      margin-bottom: 50px;
       font-size: 43px;
       line-height: 50px;
     }

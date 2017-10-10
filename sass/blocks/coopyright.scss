@@ -14,6 +14,10 @@
     font-size: 19px;
     font-family: $open-sans;
     line-height: 18px;
+
+    &--icon {
+      fill: $downy;
+    }
   }
 
   &__text {

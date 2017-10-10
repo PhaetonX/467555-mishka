@@ -1,5 +1,9 @@
 .reviews {
-  margin-bottom: 90px;
+  margin-bottom: 71px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 90px;
+  }
 
   & .container {
     display: flex;
@@ -19,7 +23,7 @@
     padding-bottom: 28px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 47px;
+      margin-bottom: 17px;
 
       order: 1;
     }
@@ -108,7 +112,6 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      margin-top: 10px;
       width: 175px;
 
       order: 2;

@@ -1,4 +1,5 @@
 .main-nav {
+  z-index: 1;
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -13,9 +14,10 @@
 
   &__link {
     position: relative;
-    padding-left: 45px;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    padding-left: 75px;
     color: $black;
-    text-align: center;
     text-decoration: none;
     letter-spacing: 0;
     font-weight: 700;
@@ -25,8 +27,7 @@
   }
 
   &__item {
-    padding-top: 26px;
-    padding-bottom: 28px;
+    display: flex;
     border-top: 1px solid $grey;
 
     &:hover .user-menu__link--icon {
@@ -45,11 +46,4 @@
       border: none;
     }
   }
-}
-
-.user-menu__link--icon {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  opacity: 0.2;
 }
