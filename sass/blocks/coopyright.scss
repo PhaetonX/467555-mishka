@@ -1,7 +1,26 @@
-.coopyright__text {
-  letter-spacing: 0;
-  font-weight: 700;
-  font-size: 19px;
-  font-family: $open-sans;
-  line-height: 18px;
+.coopyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 40px;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: $open-sans;
+    line-height: 18px;
+
+    &--icon {
+      fill: $downy;
+    }
+  }
+
+  &__text {
+    padding-right: 26px;
+  }
 }
