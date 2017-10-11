@@ -1,138 +1,48 @@
-.reviews {
-  margin-bottom: 71px;
+.site-menu {
+  margin: 0 -30px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
-  }
-
-  & .container {
     display: flex;
-    flex-direction: column;
-
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
-
-      flex-wrap: wrap;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-bottom: 140px;
-      border-bottom: 3px solid red;
-    }
-  }
-
-  &__title {
+    flex-direction: row;
     margin: 0;
-    padding-bottom: 25px;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 45px;
-
-      order: 1;
-    }
   }
 
-  &__list {
-    @media (min-width: $tablet-width) {
-      order: 3;
-    }
-  }
-
-  &__item {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 27px;
-    letter-spacing: 0;
-    font-weight: 400;
-    font-size: 15px;
-    font-family: $open-sans;
-    line-height: 30px;
+  &__link {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 30px;
-      font-size: 17px;
-      line-height: 31px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 10px;
-      width: 770px;
-    }
-  }
-
-  &__author-name {
-    display: block;
-    margin-bottom: 8px;
-    font-style: normal;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 5px;
-      font-size: 18px;
+      margin-right: 35px;
+      padding: 0;
+      padding-top: 20px;
+      font-size: 15px;
       line-height: 24px;
     }
-  }
-
-  &__author-email {
-    display: block;
-    padding-bottom: 28px;
-    letter-spacing: 0;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  &__nav {
-    display: flex;
-    margin-bottom: 40px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: -85px;
-      margin-right: 25px;
-      margin-left: auto;
-
-      order: 4;
-    }
-
-    &--icon {
-      position: absolute;
-      top: 12px;
-      left: 40px;
-    }
-  }
-
-  &__button {
-    position: relative;
-    padding: 25px 0;
-    width: 130px;
-    border: 1px solid $grey;
-    background-color: transparent;
-
-    @media (min-width: $tablet-width) {
-      padding-right: 19px;
-      padding-left: 18px;
-      width: 85px;
-      border: none;
-    }
-  }
-
-  &__write {
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      width: 175px;
-
-      order: 2;
-    }
 
     @media (min-width: $desktop-width) {
-      margin-top: 7px;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+      padding-top: 30px;
+      padding-right: 33px;
+      padding-bottom: 33px;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &--catalog {
+      @media (min-width: $desktop-width) {
+        border-right: 1px solid $grey;
+      }
+    }
+
+    &--order {
+      @media (min-width: $desktop-width) {
+        padding-left: 35px;
+      }
     }
   }
 }
