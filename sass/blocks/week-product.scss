@@ -1,5 +1,23 @@
 .week-product {
+  margin-bottom: 70px;
+
+  &__title {
+    padding-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 17px;
+      text-align: center;
+    }
+  }
+
   &__title-description {
+    display: flex;
+    margin: 0;
+    padding: 0;
     color: $downy;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -7,13 +25,118 @@
     font-size: 17px;
     font-family: $open-sans;
     line-height: 20px;
+
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 16px;
+      padding-right: 25px;
+      width: 98px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 18px;
+      left: 95px;
+    }
+  }
+
+  & .page-subtitle {
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 9px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+
+    &__info-table {
+      margin-bottom: 30px;
+      border-collapse: collapse;
+
+      &--value {
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+        padding-right: 28px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $grey;
+      }
+    }
+  }
+
+  &__info-table {
+    margin-bottom: 30px;
+    border-collapse: collapse;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 85px;
+    }
+
+    &--value {
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+      padding-right: 28px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  &__image {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+
+      align-self: flex-end;
+    }
   }
 
   &__price {
+    margin-bottom: 29px;
     color: $grey-68;
     font-weight: 700;
     font-size: 17px;
     font-family: $open-sans;
     line-height: 24px;
+
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 36px;
+      padding-top: 26px;
+      padding-left: 71px;
+      font-size: 20px;
+      line-height: 24px;
+
+      align-self: flex-start;
+    }
+  }
+
+  &__order {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 289px;
+    }
+  }
+}
+
+.week-product-description-text {
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    width: 285px;
+    font-size: 17px;
+    line-height: 30px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 47px;
+    }
   }
 }

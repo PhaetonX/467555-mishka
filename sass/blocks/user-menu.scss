@@ -1,0 +1,64 @@
+.user-menu {
+  margin: 0 -30px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    max-width: 350px;
+
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 83px;
+    }
+
+    &-search {
+      @media (min-width: $tablet-width) {
+        padding: 0;
+        width: 85px;
+        border-right: 1px solid $grey;
+        border-left: 1px solid $grey;
+      }
+    }
+
+    &--text-hidden {
+      @media (min-width: $tablet-width) {
+        overflow: hidden;
+        color: transparent;
+        text-indent: 100%;
+        white-space: nowrap;
+      }
+    }
+
+    &--icon {
+      position: absolute;
+      top: 32px;
+      left: 24px;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        top: 35px;
+      }
+    }
+  }
+}

@@ -1,28 +1,334 @@
+.form-order {
+  margin-bottom: 55px;
+
+  & .container {
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 127px;
+      width: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 60px;
+      padding-bottom: 16px;
+    }
+
+    &--color {
+      @media (min-width: $tablet-width) {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+      }
+    }
+
+    &--fullname {
+      @media (min-width: $tablet-width) {
+        padding-top: 40px;
+        width: 100%;
+      }
+    }
+
+    &--wrapper {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: baseline;
+        padding: 0;
+        padding-right: 50px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    padding-top: 11px;
+    padding-bottom: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: $open-sans;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: $tablet-padding;
+      padding-left: $tablet-padding;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &-required {
+      margin: 0;
+      margin-bottom: 33px;
+      padding: 0;
+      padding-top: 5px;
+      font-size: 14px;
+      line-height: 16px;
+
+      @media (min-width: $tablet-width) {
+        order: 1;
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &-text {
+      margin-bottom: 22px;
+      padding-top: 15px;
+      padding-bottom: 14px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #000000;
+      background-color: transparent;
+      letter-spacing: 0;
+      font-weight: 400;
+      font-size: 17px;
+      font-family: $open-sans;
+      line-height: 18px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 20px;
+        font-size: 19px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__label {
+    padding-left: 63px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 80px;
+      font-size: 19px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &-text {
+        padding-right: 25px;
+        font-size: 19px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__label-radio {
+    position: relative;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 45px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $grey-68;
+      border-radius: 50%;
+      content: "";
+
+      @media (min-width: $tablet-width) {
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $downy;
+      content: "";
+
+      @media (min-width: $tablet-width) {
+        top: 5px;
+        left: 15px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+  &__label-checkbox {
+    position: relative;
+    padding-bottom: 40.5px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 46px;
+      width: 260px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 40px;
+      height: 41px;
+      border: 2px solid $grey-68;
+      content: "";
+
+      @media (min-width: $tablet-width) {
+        width: 54px;
+        height: 52px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 4px;
+      left: 9px;
+      width: 23px;
+      height: 16px;
+      background-image: url("../img/icon-tick.svg");
+      content: "";
+
+      @media (min-width: $tablet-width) {
+        top: 7px;
+        left: 11px;
+        width: 32px;
+        height: 22px;
+      }
+    }
+  }
+
+  &__textarea {
+    margin-top: 14px;
+    padding: 15px;
+    width: 100%;
+    height: 145px;
+    border: 2px solid $grey-68;
+    background-color: transparent;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: $open-sans;
+    line-height: 18px;
+    resize: none;
+  }
+
+  &__submit {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+    }
+  }
+
+  &__footer {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-right: $tablet-padding;
+      padding-left: $tablet-padding;
+    }
+  }
+}
+
 .form-order__section {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
   border: none;
 
+  &:first-of-type {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+
   &-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 33px;
     color: $downy;
+    text-transform: uppercase;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 17px;
     font-family: $open-sans;
     line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 34px;
+      padding-left: 50px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 7px;
+      left: 62px;
+      width: 200px;
+      height: 1px;
+      background-color: $downy;
+      content: "";
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
   }
 
-  &__input {
-    border: none;
-    border-bottom: 2px solid $black;
-    color: $grey-68;
-    letter-spacing: 0;
-    font-size: 17px;
-    font-family: $open-sans;
-    line-height: 18px;
+  &-title--fullname {
+    padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 25px;
+    }
   }
 
-  &__textarea {
-    height: 134px;
-    border: 2px solid $black;
-    resize: none;
+  &-title--info {
+    padding-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 12px;
+    }
+  }
+
+  &-grey {
+    @media (min-width: $tablet-width) {
+      background-color: $grey;
+    }
+  }
+
+  &--double {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &--item {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 127px;
+    }
   }
 }
