@@ -1,5 +1,6 @@
 .form-order {
   margin-bottom: 55px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
@@ -50,6 +51,7 @@
         width: 100%;
       }
     }
+
     &--add {
       @media (min-width: $tablet-width) {
         padding-top: 30px;
@@ -240,6 +242,7 @@
     font-family: $open-sans;
     line-height: 18px;
     resize: none;
+
     @media (min-width: $tablet-width) {
       font-size: 19px;
       line-height: 18px;
@@ -290,18 +293,20 @@
   &--phone {
     margin-bottom: 10px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin: 0;
       padding-top: 47px;
       padding-left: 135px;
     }
   }
+
   &--email {
     @media (min-width: $tablet-width) {
       padding-bottom: 30px;
       padding-left: 105px;
     }
   }
+
   &--add {
     @media (min-width: $tablet-width) {
       margin-bottom: 35px;
@@ -326,7 +331,7 @@
       padding-left: 50px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       padding-left: 113px;
     }
 
