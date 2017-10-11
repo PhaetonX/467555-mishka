@@ -38,5 +38,10 @@
         border-right: 1px solid $grey;
       }
     }
+    &--order {
+      @media (min-width: $desktop-width) {
+        padding-left: 35px;
+      }
+    }
   }
 }

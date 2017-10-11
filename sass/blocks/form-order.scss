@@ -1,5 +1,8 @@
 .form-order {
   margin-bottom: 55px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   & .container {
     @media (min-width: $tablet-width) {
@@ -12,13 +15,10 @@
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      padding-left: 127px;
-      width: 100%;
-    }
-
-    @media (min-width: $tablet-width) {
       padding-top: 60px;
       padding-bottom: 16px;
+      padding-left: 127px;
+      width: 100%;
     }
 
     &--color {
@@ -45,6 +45,11 @@
         width: 100%;
       }
     }
+    &--add {
+      @media(min-width: $tablet-width) {
+        padding-top: 30px;
+      }
+    }
   }
 
   &__description {
@@ -57,7 +62,10 @@
     line-height: 24px;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 7px;
+      padding-top: 45px;
       padding-right: $tablet-padding;
+      padding-bottom: 0;
       padding-left: $tablet-padding;
       font-size: 17px;
       line-height: 30px;
@@ -72,6 +80,9 @@
       line-height: 16px;
 
       @media (min-width: $tablet-width) {
+        font-size: 17px;
+        line-height: 30px;
+
         order: 1;
       }
     }
@@ -96,6 +107,7 @@
 
       @media (min-width: $tablet-width) {
         margin-bottom: 20px;
+        padding-left: 17px;
         font-size: 19px;
         line-height: 18px;
       }
@@ -208,7 +220,7 @@
     margin-top: 14px;
     padding: 15px;
     width: 100%;
-    height: 145px;
+    height: 142px;
     border: 2px solid $grey-68;
     background-color: transparent;
     letter-spacing: 0;
@@ -217,6 +229,10 @@
     font-family: $open-sans;
     line-height: 18px;
     resize: none;
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   &__submit {
@@ -257,6 +273,26 @@
 
     &:first-of-type {
       margin: 0;
+    }
+  }
+
+  &--phone {
+    margin-bottom: 10px;
+    @media(min-width: $tablet-width) {
+      margin: 0;
+      padding-top: 47px;
+      padding-left: 135px;
+    }
+  }
+  &--email {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 30px;
+      padding-left: 105px;
+    }
+  }
+  &--add {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 35px;
     }
   }
 
@@ -301,12 +337,20 @@
     }
   }
 
-  &-title--info {
-    padding-bottom: 14px;
+  &-title--add {
+    padding-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 12px;
     }
+  }
+
+  &-title--phone {
+    padding-bottom: 10px;
+  }
+
+  &-title--email {
+    padding-bottom: 10px;
   }
 
   &-grey {
@@ -328,7 +372,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
-      padding-left: 127px;
+      // padding-left: 125px;
     }
   }
 }
