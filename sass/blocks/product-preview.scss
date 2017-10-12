@@ -49,7 +49,6 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 27px;
-      // margin-bottom: 155px;
       width: 240px;
     }
   }
@@ -121,12 +120,35 @@
       font-size: 20px;
       line-height: 24px;
     }
+
+    &-link {
+      color: #000000;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 .product-preview__add-to-basket {
   &--icon-cart {
-    fill: $downy;
+    opacity: 0.2;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      fill: $downy;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
