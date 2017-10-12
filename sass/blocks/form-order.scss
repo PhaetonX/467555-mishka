@@ -132,7 +132,7 @@
         padding-left: 17px;
         font-size: 19px;
         line-height: 18px;
-      };
+      }
     }
   }
 
@@ -407,7 +407,7 @@
   }
 }
 
-#accessory:checked ~ .form-order__label-radio[for=accessory]::after {
+#accessory:checked ~ .form-order__label-radio[for="accessory"]::after {
   position: absolute;
   top: 3px;
   left: 12px;
@@ -425,7 +425,7 @@
   }
 }
 
-#toy:checked ~ .form-order__label-radio[for=toy]::after {
+#toy:checked ~ .form-order__label-radio[for="toy"]::after {
   position: absolute;
   top: 3px;
   left: 12px;
