@@ -1,5 +1,6 @@
 .contacts {
-  margin-bottom: 42px;
+  margin-top: 70px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -22,7 +23,7 @@
     flex-wrap: wrap;
 
     @media (min-width: $desktop-width) {
-      height: 630px;
+      height: 565px;
     }
   }
 
@@ -101,8 +102,18 @@
   }
 
   &__email {
+    border-bottom: 1px solid $downy;
     color: $grey-68;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $downy;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__write {
@@ -163,7 +174,7 @@
 
   & .page-subtitle {
     position: relative;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     letter-spacing: 0;
     font-weight: 700;
     font-size: 18px;

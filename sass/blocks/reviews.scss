@@ -1,8 +1,12 @@
 .reviews {
-  margin-bottom: 71px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
   }
 
   & .container {
@@ -16,14 +20,19 @@
 
       flex-wrap: wrap;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 140px;
+      border-bottom: 3px solid red;
+    }
   }
 
   &__title {
     margin: 0;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 17px;
+      padding-bottom: 45px;
 
       order: 1;
     }
@@ -38,7 +47,7 @@
   &__item {
     margin: 0;
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     letter-spacing: 0;
     font-weight: 400;
     font-size: 15px;
@@ -49,6 +58,11 @@
       margin-bottom: 30px;
       font-size: 17px;
       line-height: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+      width: 770px;
     }
   }
 
@@ -76,7 +90,7 @@
 
   &__nav {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
       margin-top: -85px;
@@ -115,6 +129,10 @@
       width: 175px;
 
       order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 7px;
     }
   }
 }

@@ -1,11 +1,12 @@
 .page-footer {
-  & .container {
-    background-color: $seashell;
+  background-color: $seashell;
 
+  & .container {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding: 51px 50px;
     }
   }
 
@@ -14,6 +15,11 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+    }
+
+    &-image {
+      width: 102px;
+      height: 34px;
     }
   }
 }
