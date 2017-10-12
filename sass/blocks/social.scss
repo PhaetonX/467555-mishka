@@ -13,6 +13,13 @@
     list-style: none;
 
     flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-left: 110px;
+      padding: 0;
+      border: none;
+    }
   }
 
   &__item {

@@ -50,6 +50,10 @@
         padding-right: 50px;
         width: 100%;
       }
+
+      @media (min-width: $desktop-width) {
+        padding-right: 225px;
+      }
     }
 
     &--add {
@@ -97,6 +101,10 @@
         line-height: 30px;
 
         order: 1;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: auto;
       }
     }
   }
@@ -268,6 +276,11 @@
       padding-right: $tablet-padding;
       padding-left: $tablet-padding;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+      padding-left: 225px;
+    }
   }
 }
 
@@ -298,6 +311,10 @@
       padding-top: 47px;
       padding-left: 135px;
     }
+
+    @media (min-width:  $desktop-width) {
+      padding-left: 80px;
+    }
   }
 
   &--email {
@@ -305,11 +322,19 @@
       padding-bottom: 30px;
       padding-left: 105px;
     }
+
+    @media (min-width:  $desktop-width) {
+      padding-left: 50px;
+    }
   }
 
   &--add {
     @media (min-width: $tablet-width) {
       margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 27px;
     }
   }
 

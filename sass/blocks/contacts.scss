@@ -1,5 +1,6 @@
 .contacts {
-  margin-bottom: 42px;
+  margin-top: 70px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -22,7 +23,7 @@
     flex-wrap: wrap;
 
     @media (min-width: $desktop-width) {
-      height: 630px;
+      height: 565px;
     }
   }
 
