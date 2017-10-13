@@ -24,5 +24,13 @@
 
   &__item {
     margin-right: 40px;
+
+    &--icon:hover {
+      fill: $downy;
+    }
+
+    &--icon:active {
+      opacity: 0.3;
+    }
   }
 }
