@@ -159,6 +159,7 @@
         right: 0;
       }
     }
+
     &-icon-email {
       position: absolute;
       top: 6px;
@@ -170,7 +171,7 @@
         right: 23px;
       }
 
-      @media(min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         top: 12px;
         right: 0;
       }
@@ -282,6 +283,7 @@
   &__footer {
     padding-right: $mobile-padding;
     padding-left: $mobile-padding;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -298,8 +300,10 @@
       width: 1150px;
     }
   }
+
   &__wrapper {
     margin: 0 auto;
+
     &:first-of-type {
       margin-bottom: 25px;
     }
@@ -325,8 +329,6 @@
   padding-right: $mobile-padding;
   padding-left: $mobile-padding;
   border: none;
-
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -361,6 +363,7 @@
 
   &--email {
     position: relative;
+
     @media (min-width: $tablet-width) {
       padding-bottom: 30px;
       padding-left: 105px;

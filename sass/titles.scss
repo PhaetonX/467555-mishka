@@ -35,30 +35,28 @@
     background-color: $alabaster;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/hero-mobile@2x.jpg")no-repeat 50% 0;
+      background-image: url("../img/hero-mobile@2x.jpg") no-repeat 50% 0;
     }
 
 
     @media (min-width: $tablet-width) {
       padding-top: 128px;
       padding-bottom: 374px;
-      background: url("../img/hero-tablet@1x.jpg")no-repeat 50% 0;
-
-
+      background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: url("../img/hero-tablet@2x.jpg")no-repeat 50% 0;
+        background: url("../img/hero-tablet@2x.jpg") no-repeat 50% 0;
         background-size: 1150px 746px;
       }
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 360px;
-      background: url("../img/hero-desktop@1x.jpg")no-repeat 50% 0;
+      background: url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
       background-size: 1250px 746px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: url("../img/hero-desktop@2x.jpg")no-repeat 50% 0;
+        background: url("../img/hero-desktop@2x.jpg") no-repeat 50% 0;
       }
     }
   }
@@ -88,12 +86,10 @@
 
     @media (min-width: $tablet-width) {
       margin-top: -44px;
-      // padding-top: 128px;
     }
 
     @media (min-width: $desktop-width) {
       // margin-bottom: 34px;
-
       // padding-top: 30px;
     }
   }
@@ -106,7 +102,7 @@
     @media (min-width: $tablet-width) {
       margin-top: -44px;
       margin-bottom: 68px;
-      background-image: url(../img/bg-zigzag-fill.svg);
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-position: 0 bottom;
       background-size: auto 23px;
       background-repeat: repeat-x;
@@ -124,7 +120,7 @@
     @media (min-width: $tablet-width) {
       margin-top: -44px;
       margin-bottom: 34px;
-      background-image: url(../img/bg-zigzag-fill.svg);
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-position: 0 bottom;
       background-size: auto 23px;
       background-repeat: repeat-x;

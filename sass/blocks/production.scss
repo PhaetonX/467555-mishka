@@ -67,6 +67,7 @@
       }
     }
   }
+
   &__icon {
     position: absolute;
     top: 28px;
@@ -83,13 +84,14 @@
       left: 78px;
     }
   }
+
   &__play {
     position: absolute;
     top: 36px;
     left: 79px;
     width: 101px;
     height: 77px;
-    background: url(../img/icon-play.svg) no-repeat 50% 50%;
+    background: url("../img/icon-play.svg") no-repeat 50% 50%;
     background-size: 101px 77px;
     cursor: pointer;
 
@@ -148,10 +150,11 @@
     order: 3;
 
     &:hover {
-      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 10px rgba(0 ,0, 0, 0.1);
     }
+
     &:active {
-      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
 

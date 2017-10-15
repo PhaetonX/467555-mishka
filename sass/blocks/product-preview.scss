@@ -46,11 +46,11 @@
       flex-wrap: wrap;
 
       &:hover {
-        box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
       }
 
       &:active {
-        box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -80,6 +80,7 @@
       width: 316px;
       height: 462px;
     }
+
     &-link {
       flex-shrink: 0;
     }
@@ -98,10 +99,6 @@
     @media (min-width: $tablet-width) {
       padding-top: 25px;
       padding-bottom: 30px;
-      // width: 275px;
-    }
-
-    @media (min-width: $desktop-width) {
     }
   }
 

@@ -22,14 +22,14 @@
       align-items: flex-start;
       justify-content: space-between;
       padding-bottom: 20px;
-      background: url(../img/review@1x.jpg) no-repeat;
+      background: url("../img/review@1x.jpg") no-repeat;
 
       flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 150px;
-      background-image: url(../img/review@1x.jpg);
+      background-image: url("../img/review@1x.jpg");
       background-position: 50px 5px;
       background-repeat: no-repeat;
 
@@ -148,7 +148,7 @@
     &:hover,
     &:focus {
       opacity: 0.6;
-    };
+    }
 
     &:active {
       opacity: 0.3;
@@ -159,6 +159,7 @@
       width: 50%;
       border: none;
     }
+
     &-next {
       padding-right: 0;
     }
