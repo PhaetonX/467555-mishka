@@ -3,8 +3,9 @@
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 23px;
     margin-bottom: 60px;
-    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     padding: 0;
     letter-spacing: 0;
 
@@ -155,11 +156,12 @@
       height: 528px;
     }
 
-    &--picture {
+    &-picture {
       display: none;
+
     }
 
-    &--iframe {
+    &-iframe {
       @media (min-width: $tablet-width) {
         width: 768px;
         height: 457px;

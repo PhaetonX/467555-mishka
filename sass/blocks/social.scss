@@ -1,36 +1,35 @@
 .social {
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+  max-width: 260px;
+  border-bottom: 1px solid $grey;
+  list-style: none;
+
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: 110px;
     padding: 0;
-    padding-top: 25px;
-    padding-bottom: 22px;
-    padding-left: 35px;
-    max-width: 260px;
-    border-bottom: 1px solid $grey;
-    list-style: none;
-
-    flex-wrap: wrap;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      margin-left: 110px;
-      padding: 0;
-      border: none;
-    }
+    border: none;
   }
+
 
   &__item {
     margin-right: 40px;
+  }
 
-    &--icon:hover {
-      fill: $downy;
-    }
+  &__icon:hover {
+    fill: $downy;
+  }
 
-    &--icon:active {
-      opacity: 0.3;
-    }
+  &__icon:active {
+    opacity: 0.3;
   }
 }
