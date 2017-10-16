@@ -78,6 +78,17 @@
     font-family: $open-sans;
     line-height: 24px;
 
+    &:hover {
+      position: relative;
+      bottom: 5px;
+      box-shadow: 0 5px 0 0 $downy;
+    }
+
+
+    &:active {
+      color: rgba(255,255,255,0.3);
+    }
+
     @media (min-width: $tablet-width) {
       padding-top: 28px;
       padding-left: 37px;
