@@ -1,7 +1,5 @@
 .page-header {
   & .container {
-    margin-top: 21px;
-
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
@@ -14,6 +12,7 @@
 
   &__logo {
     display: block;
+    margin-top: 21px;
     margin-bottom: 21px;
     height: 35px;
     text-align: center;
@@ -23,9 +22,21 @@
     @media (min-width: $tablet-width) {
       margin-top: 21px;
       margin-bottom: 10px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 9px;
+      margin-right: 59px;
+
       order: 2;
     }
   }
@@ -33,6 +44,16 @@
   &__logo-image {
     width: 86px;
     height: 35px;
+
+    @media (min-width: $tablet-width) {
+      width: 113px;
+      height: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 148px;
+      height: 73px;
+    }
   }
 
   &__toggle {

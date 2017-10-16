@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     padding-top: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 11px;
     padding-left: 90px;
     border-top: 1px solid $grey;
     border-right: 1px solid $grey;
@@ -45,7 +45,7 @@
     @media (min-width: $desktop-width) {
       padding: 0;
       padding-top: 78px;
-      padding-bottom: 7px;
+      padding-bottom: 15px;
       padding-left: 77px;
       width: 367px;
     }
@@ -62,13 +62,63 @@
       }
 
       @media (min-width: $desktop-width) {
+        margin-top: 20px;
         width: 176px;
       }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    fill: $downy;
+
+    @media (min-width: $tablet-width) {
+      top: 35px;
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 78px;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    top: 36px;
+    left: 79px;
+    width: 101px;
+    height: 77px;
+    background: url("../img/icon-play.svg") no-repeat 50% 50%;
+    background-size: 101px 77px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      top: 192px;
+      left: 283px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 191px;
+      left: 291px;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.3;
+      transform: scale(0.8);
     }
   }
 }
 
 .production__video {
+  position: relative;
   width: 260px;
   height: 150px;
 
@@ -76,7 +126,6 @@
     margin-bottom: 0;
     width: 668px;
     height: 455px;
-    border: 1px solid red;
 
     order: 1;
   }
@@ -90,19 +139,28 @@
 }
 
 .production__descripion {
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   border-right: 1px solid $grey;
   border-bottom: 1px solid $grey;
   border-left: 1px solid $grey;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 
     order: 3;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 57px;
+    padding-bottom: 58px;
+    padding-left: 79px;
     width: 367px;
   }
 
@@ -120,7 +178,8 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 20px;
-      padding-top: 12px;
+      padding-top: 6px;
+      padding-bottom: 35px;
       padding-left: 40px;
       width: 620px;
       font-size: 15px;
@@ -128,9 +187,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding: 0;
       padding-bottom: 45px;
-      padding-left: 77px;
-      width: 367px;
+      width: auto;
     }
   }
 
@@ -150,20 +209,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 81px;
+      margin: 0;
       width: 230px;
     }
-  }
-}
-
-.production__title-icon {
-  position: absolute;
-  top: 28px;
-  left: 32px;
-  fill: $downy;
-
-  @media (min-width: $desktop-width) {
-    top: 41px;
-    left: 78px;
   }
 }

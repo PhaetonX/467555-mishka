@@ -1,10 +1,33 @@
 .product-menu {
+  position: relative;
+  margin-bottom: 28px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
+    background-color: $alabaster;
+
+    &::after {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: -4px top;
+      background-size: auto 23px;
+      background-repeat: repeat-x;
+      content: "";
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 103px;
+    margin-bottom: 121px;
+
+    &::after {
+      bottom: 0;
+      background-position: 0 top;
+      background-size: auto;
+    }
   }
 
   & .container {
@@ -42,9 +65,9 @@
 
   &__link {
     display: block;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-right: 60px;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
     padding-left: $mobile-padding;
     width: 100%;
     color: $white;
@@ -55,7 +78,19 @@
     font-family: $open-sans;
     line-height: 24px;
 
+    &:hover {
+      position: relative;
+      bottom: 5px;
+      box-shadow: 0 5px 0 0 $downy;
+    }
+
+
+    &:active {
+      color: rgba(255,255,255,0.3);
+    }
+
     @media (min-width: $tablet-width) {
+      padding-top: 28px;
       padding-left: 37px;
     }
 
@@ -77,11 +112,29 @@
   &__link--color-darker {
     background-color: $fountain;
   }
-}
 
-.product-menu__link--icon {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  fill: #3bb09d;
+  &__icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    fill: #3bb09d;
+
+    &--interior {
+      right: 36px;
+
+      @media (min-width: $tablet-width) {
+        top: 29px;
+      }
+    }
+
+    &--toy {
+      top: 19px;
+      right: 27px;
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 33px;
+      }
+    }
+  }
 }

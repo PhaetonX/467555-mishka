@@ -37,7 +37,8 @@
 
     &--fullname {
       @media (min-width: $tablet-width) {
-        padding-top: 40px;
+        padding-top: 45px;
+        padding-bottom: 30px;
         width: 100%;
       }
     }
@@ -58,14 +59,21 @@
 
     &--add {
       @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
         padding-top: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-bottom: 11px;
       }
     }
   }
 
   &__description {
-    padding-top: 11px;
-    padding-bottom: 14px;
+    padding-top: 9px;
+    padding-right: $mobile-padding;
+    padding-bottom: 10px;
+    padding-left: $mobile-padding;
     letter-spacing: 0;
     font-weight: 400;
     font-size: 13px;
@@ -74,7 +82,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 7px;
-      padding-top: 45px;
+      padding-top: 27px;
       padding-right: $tablet-padding;
       padding-bottom: 0;
       padding-left: $tablet-padding;
@@ -84,13 +92,13 @@
 
     @media (min-width: $desktop-width) {
       margin: 0 auto;
-      padding-top: 117px;
+      padding-top: 77px;
       width: 800px;
     }
 
     &-required {
       margin: 0;
-      margin-bottom: 33px;
+      margin-bottom: 30px;
       padding: 0;
       padding-top: 5px;
       font-size: 14px;
@@ -132,6 +140,40 @@
         padding-left: 17px;
         font-size: 19px;
         line-height: 18px;
+      }
+    }
+
+    &-icon-phone {
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        top: 64px;
+        right: 25px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 60px;
+        right: 0;
+      }
+    }
+
+    &-icon-email {
+      position: absolute;
+      top: 6px;
+      right: 4px;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        top: 16px;
+        right: 23px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 12px;
+        right: 0;
       }
     }
   }
@@ -203,23 +245,6 @@
         height: 52px;
       }
     }
-
-    // &::after {
-    //   position: absolute;
-    //   top: 4px;
-    //   left: 9px;
-    //   width: 23px;
-    //   height: 16px;
-    //   background-image: url("../img/icon-tick.svg");
-    //   content: "";
-    //
-    //   @media (min-width: $tablet-width) {
-    //     top: 7px;
-    //     left: 11px;
-    //     width: 32px;
-    //     height: 22px;
-    //   }
-    // }
   }
 
   &__textarea {
@@ -248,11 +273,17 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
+      padding-bottom: 19px;
       width: 230px;
+      font-size: 18px;
+      line-height: 16px;
     }
   }
 
   &__footer {
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -263,8 +294,30 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin: 0 auto;
       padding-right: 225px;
       padding-left: 225px;
+      width: 1150px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+
+    &:first-of-type {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:first-of-type {
+        margin: 0;
+      }
+    }
+
+    &--bg-grey {
+      @media (min-width: $tablet-width) {
+        background-color: $grey;
+      }
     }
   }
 }
@@ -273,22 +326,28 @@
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
+  padding-right: $mobile-padding;
+  padding-left: $mobile-padding;
   border: none;
-
-  &:first-of-type {
-    margin-bottom: 22px;
-  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: baseline;
+    padding: 0;
 
     &:first-of-type {
-      margin: 0;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      padding: 0;
+      width: 1150px;
     }
   }
 
   &--phone {
+    position: relative;
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
@@ -303,6 +362,8 @@
   }
 
   &--email {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       padding-bottom: 30px;
       padding-left: 105px;
@@ -319,7 +380,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 27px;
+      margin-bottom: 19px;
     }
   }
 
@@ -483,4 +544,21 @@
 .form-order__input-text:hover,
 .form-order__input-text:focus {
   border-bottom: 2px solid $downy;
+}
+
+.form-order__input-phone:hover + .form-order__input-icon-phone,
+.form-order__input-phone:focus + .form-order__input-icon-phone {
+  opacity: 1;
+  fill: $downy;
+}
+
+.form-order__input-email:hover + .form-order__input-icon-email,
+.form-order__input-email:focus + .form-order__input-icon-email {
+  opacity: 1;
+  fill: $downy;
+}
+
+.form-order__textarea:hover,
+.form-order__textarea:focus {
+  border: 2px solid $downy;
 }

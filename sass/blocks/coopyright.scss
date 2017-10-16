@@ -19,16 +19,34 @@
     font-family: $open-sans;
     line-height: 18px;
 
-    @media (min-width: $tablet-width) {
-      padding: 0;
+    &:hover .coopyright__icon {
+      fill: #46c1ae;
     }
 
-    &--icon {
-      fill: $downy;
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
     }
   }
 
   &__text {
     padding-right: 26px;
+    padding-bottom: 4px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 29px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    fill: $downy;
   }
 }

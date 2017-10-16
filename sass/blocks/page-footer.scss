@@ -5,8 +5,9 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
-      padding: 51px 50px;
+      padding: 55px 50px;
     }
   }
 
@@ -20,6 +21,18 @@
     &-image {
       width: 102px;
       height: 34px;
+    }
+  }
+
+  &__icon {
+    &:hover,
+    &:focus {
+      fill: $downy;
+    }
+
+    &:active {
+      opacity: 0.3;
+      fill: $downy;
     }
   }
 }

@@ -1,5 +1,39 @@
 .week-product {
+  position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  & .container {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 65px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 768px;
+        height: 17px;
+        background-image: url("../img/bg-zigzag-line.svg");
+        background-size: auto 17px;
+        background-repeat: repeat-x;
+        content: "";
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 89px;
+
+      &::after {
+        left: 50px;
+        width: 1050px;
+        height: 23px;
+        background-size: auto 23px;
+      }
+    }
+  }
 
   &__title {
     padding-bottom: 5px;
@@ -9,8 +43,13 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin-top: 46px;
       margin-bottom: 17px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 21px;
     }
   }
 
@@ -29,7 +68,6 @@
     flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
-      padding-top: 16px;
       padding-right: 25px;
       width: 98px;
     }
@@ -42,10 +80,14 @@
   }
 
   & .page-subtitle {
+    z-index: 1;
     margin: 0;
     padding: 0;
-    padding-top: 22px;
     padding-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -3px;
+    }
   }
 
   &__description {
@@ -64,6 +106,21 @@
         padding-right: 28px;
         padding-bottom: 8px;
         border-bottom: 1px solid $grey;
+      }
+    }
+
+    &-text {
+      padding-bottom: 5px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 35px;
+        width: 285px;
+        font-size: 17px;
+        line-height: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 47px;
       }
     }
   }
@@ -91,13 +148,18 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
+      top: 107px;
+      right: 51px;
+    }
 
-      align-self: flex-end;
+    @media (min-width: $desktop-width) {
+      top: -49px;
+      right: 50px;
     }
   }
 
   &__price {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
     color: $grey-68;
     font-weight: 700;
     font-size: 17px;
@@ -134,9 +196,9 @@
     width: 285px;
     font-size: 17px;
     line-height: 30px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 47px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
   }
 }

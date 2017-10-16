@@ -28,6 +28,11 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
+    &:hover .user-menu__icon {
+      opacity: 1;
+      fill: $downy;
+    }
+
     &:active {
       opacity: 0.3;
     }
@@ -58,17 +63,17 @@
         white-space: nowrap;
       }
     }
+  }
 
-    &--icon {
-      position: absolute;
-      top: 32px;
-      left: 24px;
-      opacity: 0.2;
+  &__icon {
+    position: absolute;
+    top: 32px;
+    left: 24px;
+    opacity: 0.2;
 
-      @media (min-width: $tablet-width) {
-        top: 35px;
-        left: 32px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 35px;
+      left: 32px;
     }
   }
 }
