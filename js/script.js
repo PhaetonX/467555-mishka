@@ -17,7 +17,7 @@ toggle.addEventListener("click", function(event) {
 //modal window
 
 var order = document.querySelector('.week-product__order');
-var modal = document.querySelector('.modal-order');
+var modal = document.querySelector('.modal');
 var addToBasket = document.querySelector('.product-preview__add-to-basket');
 
 if (order !== null) {
