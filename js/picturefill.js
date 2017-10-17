@@ -1438,7 +1438,6 @@
   picturefill = noop;
   pf.fillImg = noop;
   } else {
-
    // Set up picture polyfill by polling the document
   (function() {
   var isDomReady;
@@ -1459,7 +1458,6 @@
   };
 
   var timerId = setTimeout(run, document.body ? 9 : 99);
-
   // Also attach picturefill on resize and readystatechange
   // http://modernjavascript.blogspot.com/2013/08/building-better-debounce.html
   var debounce = function(func, wait) {
