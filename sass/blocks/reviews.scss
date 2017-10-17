@@ -33,6 +33,7 @@
       background-image: url("../img/review@1x.jpg");
       background-position: 50px 5px;
       background-repeat: no-repeat;
+
       @media (min-width: $tablet-width) and (min-resolution: 144dpi),
       (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
         background-image: url("../img/review@2x.jpg");
@@ -125,8 +126,8 @@
 
   &__nav {
     display: flex;
-
     margin-bottom: 37px;
+
     flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {

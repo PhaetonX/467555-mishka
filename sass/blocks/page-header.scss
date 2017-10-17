@@ -117,6 +117,10 @@
   }
 
   &__user-menu {
+    &--no-js {
+      display: block;
+    }
+
     @media (min-width: $tablet-width) {
       order: 2;
     }
@@ -141,12 +145,6 @@
   }
 
   &__site-menu {
-    &--no-js {
-      display: block;
-    }
-  }
-
-  &__user-menu {
     &--no-js {
       display: block;
     }
