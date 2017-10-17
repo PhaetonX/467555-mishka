@@ -7,6 +7,10 @@
     padding-top: 12px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
+
   & .page-subtitle {
     margin-bottom: 55px;
 

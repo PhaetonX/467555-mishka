@@ -27,6 +27,13 @@
       margin: 0;
       width: 316px;
     }
+    &:hover .product-preview__wrapper {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active .product-preview__wrapper {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__wrapper {
@@ -44,14 +51,6 @@
       padding-top: 25px;
 
       flex-wrap: wrap;
-
-      &:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      &:active {
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-      }
     }
 
     @media (min-width: $desktop-width) {

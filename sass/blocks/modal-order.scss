@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   z-index: 100;
-  // display: none;
+  display: none;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 50px;
@@ -56,6 +56,8 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+
+    flex-wrap: wrap;
   }
 
   &__input {
@@ -67,6 +69,8 @@
     width: 80px;
     height: 50px;
     border: 1px solid $grey;
+
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       width: 115px;
