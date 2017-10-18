@@ -35,7 +35,8 @@
     background-color: $alabaster;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/hero-mobile@2x.jpg") no-repeat 50% 0;
+      background: url("../img/hero-mobile@2x.jpg") no-repeat 50% 0;
+      background-size: 571px 345px;
     }
 
 
@@ -57,6 +58,7 @@
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background: url("../img/hero-desktop@2x.jpg") no-repeat 50% 0;
+        background-size: 1250px 746px;
       }
     }
   }
@@ -86,11 +88,6 @@
 
     @media (min-width: $tablet-width) {
       margin-top: -44px;
-    }
-
-    @media (min-width: $desktop-width) {
-      // margin-bottom: 34px;
-      // padding-top: 30px;
     }
   }
 

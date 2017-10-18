@@ -46,6 +46,8 @@
       margin-top: 46px;
       margin-bottom: 17px;
       text-align: center;
+
+      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
@@ -74,7 +76,7 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      top: 18px;
+      top: 16px;
       left: 95px;
     }
   }
@@ -94,6 +96,8 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
+
+    flex-wrap: wrap;
 
     &__info-table {
       margin-bottom: 30px;
@@ -120,7 +124,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        margin-bottom: 47px;
+        margin-bottom: 45px;
       }
     }
   }
@@ -140,6 +144,11 @@
       padding-right: 28px;
       padding-bottom: 8px;
       border-bottom: 1px solid $grey;
+
+      @media (min-width: $desktop-width) {
+        padding-right: 31px;
+        padding-bottom: 10px;
+      }
     }
   }
 
@@ -177,6 +186,11 @@
 
       align-self: flex-start;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+      padding-left: 75px;
+    }
   }
 
   &__order {
@@ -185,20 +199,11 @@
     @media (min-width: $tablet-width) {
       width: 289px;
     }
-  }
-}
 
-.week-product-description-text {
-  padding-bottom: 5px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
-    width: 285px;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 47px;
+    @media (min-width: $desktop-width) {
+      width: 294px;
+      font-size: 17px;
+      line-height: 20px;
+    }
   }
 }

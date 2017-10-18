@@ -13,6 +13,8 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
+
+      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
@@ -38,6 +40,7 @@
     @media (min-width: $tablet-width) {
       padding-top: 23px;
       padding-left: 105px;
+      border-left: none;
 
       order: 2;
     }
@@ -146,6 +149,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
+    border-left: none;
 
     order: 3;
 

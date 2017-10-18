@@ -8,7 +8,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin-bottom: 45px;
     padding-bottom: 73px;
   }
 
@@ -16,6 +15,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
@@ -25,6 +26,11 @@
       background: url("../img/review@1x.jpg") no-repeat;
 
       flex-wrap: wrap;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,6 +127,8 @@
     display: flex;
     margin-bottom: 37px;
 
+    flex-wrap: wrap;
+
     @media (min-width: $tablet-width) {
       margin-top: -85px;
       margin-right: 27px;
@@ -177,6 +185,8 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 84px;
+      font-size: 17px;
+      line-height: 20px;
     }
   }
 }

@@ -66,6 +66,10 @@
     background-color: transparent;
     background-image: url("../img/icon-menu-open.svg");
 
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
     &--closed {
       top: 7px;
       right: 31px;
@@ -74,7 +78,7 @@
       background-image: url("../img/icon-menu-close.svg");
     }
 
-    @media (min-width: $tablet-width) {
+    &--no-js {
       display: none;
     }
   }
@@ -113,6 +117,10 @@
   }
 
   &__user-menu {
+    &--no-js {
+      display: block;
+    }
+
     @media (min-width: $tablet-width) {
       order: 2;
     }
@@ -134,5 +142,11 @@
 
   &__product-stock {
     order: 4;
+  }
+
+  &__site-menu {
+    &--no-js {
+      display: block;
+    }
   }
 }
