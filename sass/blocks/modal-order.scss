@@ -80,7 +80,6 @@
 
   &__input {
     display: none;
-
   }
 
   &__label {
@@ -124,14 +123,14 @@
   }
 }
 
-#size-s:checked + .modal-order__label[for="size-s"] {
+.modal-order__input--size-s:checked + .modal-order__label[for="size-s"] {
   border: 2px solid $downy;
 }
 
-#size-m:checked + .modal-order__label[for="size-m"] {
+.modal-order__input--size-m:checked + .modal-order__label[for="size-m"] {
   border: 2px solid $downy;
 }
 
-#size-L:checked + .modal-order__label[for="size-L"] {
+.modal-order__input--size-l:checked + .modal-order__label[for="size-L"] {
   border: 2px solid $downy;
 }
