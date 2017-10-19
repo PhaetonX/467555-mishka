@@ -41,6 +41,16 @@
     }
   }
 
+  &__site-menu--closed {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+  &__user-menu--closed {
+    display: none;
+  }
+
+
   &__logo-image {
     width: 86px;
     height: 35px;
@@ -130,15 +140,7 @@
     }
   }
 
-  @media (max-width: $tablet-width) {
-    &__site-menu--closed {
-      display: none;
-    }
 
-    &__user-menu--closed {
-      display: none;
-    }
-  }
 
   &__product-stock {
     order: 4;

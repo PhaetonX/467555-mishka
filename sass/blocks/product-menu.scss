@@ -88,7 +88,8 @@
 
     &:hover .product-menu__icon {
       top: 20px;
-      opacity: 0.7;
+      // opacity: 0.7;
+      fill: #29a592;
     }
 
     &:active {
@@ -96,7 +97,9 @@
     }
 
     &:active .product-menu__icon {
-      opacity: 0.3;
+      // opacity: 0.3;
+
+      fill: #44c0aa;
     }
 
     @media (min-width: $tablet-width) {
@@ -127,6 +130,7 @@
     position: absolute;
     top: 25px;
     right: 25px;
+    opacity: 0.5;
     fill: #3bb09d;
 
     &--interior {

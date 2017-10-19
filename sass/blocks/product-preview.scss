@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 
   &__item {
@@ -19,7 +19,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
-      margin-bottom: 46px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,7 +55,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 20px;
+      padding-top: 26px;
       padding-right: 33px;
       padding-left: 27px;
     }
@@ -82,6 +82,8 @@
     }
 
     &-link {
+      font-size: 0;
+
       flex-shrink: 0;
     }
   }
@@ -97,8 +99,13 @@
     flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
-      padding-top: 25px;
+      padding-top: 19px;
       padding-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 24px;
+      padding-bottom: 26px;
     }
   }
 

@@ -12,7 +12,7 @@
 
       &::after {
         position: absolute;
-        bottom: 0;
+        bottom: -4px;
         left: 0;
         width: 768px;
         height: 17px;
@@ -30,7 +30,8 @@
         left: 50px;
         width: 1050px;
         height: 23px;
-        background-size: auto 23px;
+        background-position-x: 25px;
+        background-size: 100%;
       }
     }
   }

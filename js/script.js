@@ -5,7 +5,10 @@ var userMenu = document.querySelector('.page-header__user-menu');
 
 siteMenu.classList.remove('page-header__site-menu--no-js');
 userMenu.classList.remove('page-header__user-menu--no-js');
-toggle.classList.remove('page-header__toggle--no-js;');
+toggle.classList.remove('page-header__toggle--no-js');
+// siteMenu.classList.remove('page-header__site-menu--closed');
+// userMenu.classList.remove('page-header__user-menu--closed');
+
 
 toggle.addEventListener('click', function(event) {
   toggle.classList.toggle('page-header__toggle--closed');

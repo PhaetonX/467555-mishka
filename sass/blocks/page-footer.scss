@@ -20,6 +20,10 @@
       display: block;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-top: -9px;
+    }
+
     &-image {
       width: 102px;
       height: 34px;
