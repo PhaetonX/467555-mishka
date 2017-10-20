@@ -2,12 +2,30 @@
   display: none;
 }
 
+.modal-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__overlay {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($white, 0.9);
+}
+
 .modal-order {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 100;
-  display: none;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 50px;
@@ -80,10 +98,6 @@
       border: 2px solid $grey;
     }
 
-    &:active {
-      border: 2px solid $downy;
-    }
-
     &--size {
       margin: 0 auto;
       color: $grey-68;
@@ -109,17 +123,14 @@
   }
 }
 
-.modal-show {
-  display: flex;
+.modal-order__input--size-s:checked + .modal-order__label[for="size-s"] {
+  border: 2px solid $downy;
 }
 
-.modal__overlay {
-  position: absolute;
-  z-index: 100;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(#ffffff, 0.9);
-  cursor: pointer;
-  transform: translate(-50%, -50%);
+.modal-order__input--size-m:checked + .modal-order__label[for="size-m"] {
+  border: 2px solid $downy;
+}
+
+.modal-order__input--size-l:checked + .modal-order__label[for="size-L"] {
+  border: 2px solid $downy;
 }
