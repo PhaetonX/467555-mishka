@@ -22,6 +22,7 @@ toggle.addEventListener('click', function(event) {
 var order = document.querySelector('.week-product__order');
 var modal = document.querySelector('.modal');
 var addToBasket = document.querySelector('.product-preview__add-to-basket');
+var modalOverlay = document.querySelector('.modal__overlay');
 
 if (order !== null) {
   order.addEventListener('click', function(event) {
@@ -36,6 +37,11 @@ if (addToBasket !== null) {
     modal.classList.add('modal-show');
   });
 }
+
+modalOverlay.addEventListener("click", function(event) {
+  event.preventDefault();
+  modal.classList.remove("modal-show");
+});
 
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {

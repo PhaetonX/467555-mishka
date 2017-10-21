@@ -12,7 +12,7 @@
 
       &::after {
         position: absolute;
-        bottom: -4px;
+        bottom: 3px;
         left: 0;
         width: 768px;
         height: 17px;
@@ -27,6 +27,7 @@
       padding-bottom: 89px;
 
       &::after {
+        bottom: -3px;
         left: 50px;
         width: 1050px;
         height: 23px;
@@ -100,22 +101,8 @@
 
     flex-wrap: wrap;
 
-    &__info-table {
-      margin-bottom: 30px;
-      border-collapse: collapse;
-
-      &--value {
-        margin: 0;
-        padding: 0;
-        padding-top: 5px;
-        padding-right: 28px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid $grey;
-      }
-    }
-
     &-text {
-      padding-bottom: 5px;
+      padding-bottom: 2px;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 35px;
@@ -153,8 +140,8 @@
     }
   }
 
-  &__image {
-    margin-bottom: 23px;
+  &__picture {
+    margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -165,6 +152,21 @@
     @media (min-width: $desktop-width) {
       top: -49px;
       right: 50px;
+    }
+
+    &--image {
+      width: 260px;
+      height: 315px;
+
+      @media (min-width: $tablet-width) {
+        width: 333px;
+        height: 404px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 525px;
+        height: 636px;
+      }
     }
   }
 
@@ -189,7 +191,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
       padding-left: 75px;
     }
   }
