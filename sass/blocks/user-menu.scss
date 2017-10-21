@@ -12,70 +12,70 @@
 
     flex-wrap: wrap;
   }
+}
 
-  &__item {
+.user-menu__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+  }
+}
+
+.user-menu__link {
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover .user-menu__icon {
+    opacity: 1;
+    fill: $downy;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 83px;
+  }
+
+  &-search {
     @media (min-width: $tablet-width) {
-      display: flex;
-      align-items: center;
-
-      flex-wrap: wrap;
+      padding: 0;
+      width: 85px;
+      border-right: 1px solid $grey;
+      border-left: 1px solid $grey;
     }
   }
 
-  &__link {
-    width: 100%;
-
-    &:hover,
-    &:focus {
-      color: rgba(0, 0, 0, 0.6);
-    }
-
-    &:hover .user-menu__icon {
-      opacity: 1;
-      fill: $downy;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
+  &--text-hidden {
     @media (min-width: $tablet-width) {
-      padding-top: 30px;
-      padding-bottom: 33px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 83px;
-    }
-
-    &-search {
-      @media (min-width: $tablet-width) {
-        padding: 0;
-        width: 85px;
-        border-right: 1px solid $grey;
-        border-left: 1px solid $grey;
-      }
-    }
-
-    &--text-hidden {
-      @media (min-width: $tablet-width) {
-        overflow: hidden;
-        color: transparent;
-        text-indent: 100%;
-        white-space: nowrap;
-      }
+      overflow: hidden;
+      color: transparent;
+      text-indent: 100%;
+      white-space: nowrap;
     }
   }
+}
 
-  &__icon {
-    position: absolute;
-    top: 32px;
-    left: 24px;
-    opacity: 0.2;
+.user-menu__icon {
+  position: absolute;
+  top: 32px;
+  left: 24px;
+  opacity: 0.2;
 
-    @media (min-width: $tablet-width) {
-      top: 35px;
-      left: 32px;
-    }
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: 32px;
   }
 }

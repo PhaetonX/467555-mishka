@@ -23,17 +23,22 @@
   @media (min-width: $desktop-width) {
     margin-left: 116px;
   }
+}
 
+.social__link-ally {
+  @include visually-hidden();
+}
 
-  &__item {
-    margin-right: 40px;
-  }
+.social__item {
+  margin-right: 40px;
+}
 
-  &__icon:hover {
+.social__icon {
+  &:hover {
     fill: $downy;
   }
-
-  &__icon:active {
+  &:focus,
+  &:active {
     opacity: 0.3;
   }
 }

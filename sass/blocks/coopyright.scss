@@ -5,50 +5,50 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
 
-  &__link {
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 40px;
-    color: #000000;
-    text-decoration: none;
-    letter-spacing: 0;
-    font-weight: 700;
-    font-size: 19px;
-    font-family: $open-sans;
-    line-height: 18px;
+.coopyright__link {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 40px;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 19px;
+  font-family: $open-sans;
+  line-height: 18px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    &:hover .coopyright__icon {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
+  &:hover .coopyright__icon {
+    fill: #46c1ae;
   }
 
-  &__text {
-    padding-right: 26px;
-    padding-bottom: 4px;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 29px;
-      padding-bottom: 6;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
-  &__icon {
-    fill: $downy;
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
+}
+
+.coopyright__text {
+  padding-right: 26px;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 29px;
+    padding-bottom: 6;
+  }
+}
+
+.coopyright__icon {
+  fill: $downy;
 }

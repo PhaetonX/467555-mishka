@@ -71,6 +71,10 @@
             <li class="product-preview__item">
               <a href="bunny-bouncer.html" class="product-preview__img-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="product-preview__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -86,6 +90,7 @@
                 <div class="product-preview__buy">
                   <b class="product-preview__price">1 200 руб.</b>
                   <a href="#" class="product-preview__add-to-basket">
+                    <span class="product-preview__cart-ally">добавить в корзину</span>
                     <svg class="product-preview__icon" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -97,6 +102,10 @@
             <li class="product-preview__item">
               <a href="laundry-basket.html" class="product-preview__img-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="product-preview__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -112,6 +121,7 @@
                 <div class="product-preview__buy">
                   <b class="product-preview__price">690 руб.</b>
                   <a href="#" class="product-preview__add-to-basket">
+                    <span class="product-preview__cart-ally">добавить в корзину</span>
                     <svg class="product-preview__icon" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -122,6 +132,10 @@
             <li class="product-preview__item">
               <a href="basket-for-toys.html" class="product-preview__img-link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
                   <img class="product-preview__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
@@ -137,6 +151,7 @@
                 <div class="product-preview__buy">
                   <b class="product-preview__price">1 500 руб.</b>
                   <a href="" class="product-preview__add-to-basket">
+                    <span class="product-preview__cart-ally">добавить в корзину</span>
                     <svg class="product-preview__icon" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -159,6 +174,10 @@
           <div class="production__video">
             <a class="production__play"></a>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
               <img class="production__video-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
@@ -176,7 +195,8 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a href="index.html" class="page-footer__logo">
+        <a class="page-footer__logo">
+          <span class="page-footer__logo-ally">Мишка</span>
           <svg class="page-footer__icon" width="102" height="34">
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
@@ -184,6 +204,7 @@
         <ul class="page-footer__social social">
           <li class="social__item">
             <a href="#" class="social__link social__link--inst">
+              <span class="social__link-ally">Инстаграмм</span>
               <svg class="social__icon" width="22" height="21">
                 <use xlink:href="#icon-insta"></use>
               </svg>
@@ -191,6 +212,7 @@
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--fb">
+              <span class="social__link-ally">Фейсбук</span>
               <svg class="social__icon" width="15" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -198,6 +220,7 @@
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--tw">
+              <span class="social__link-ally">Твиттер</span>
               <svg class="social__icon" width="23" height="20">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -223,22 +246,23 @@
           <p class="text">Выберите размер:</p>
           <form class="modal-order__form" action="https://echo.htmlacademy.ru/">
             <div class="modal-order__list">
-              <input type="radio" class="modal-order__input" id="size-s" name="product-size" value="s">
+              <input type="radio" class="modal-order__input modal-order__input--size-s" id="size-s" name="product-size">
               <label class="modal-order__label" for="size-s">
-                <span class="modal-order__label--size">S</span>
+                <span class="modal-order__size">S</span>
               </label>
-              <input type="radio" class="modal-order__input" name="product-size" id="size-m" value="m">
+              <input type="radio" class="modal-order__input modal-order__input--size-m" name="product-size" id="size-m">
               <label class="modal-order__label" for="size-m">
-                <span class="modal-order__label--size">M</span>
+                <span class="modal-order__size">M</span>
               </label>
-              <input type="radio" class="modal-order__input" name="product-size" id="size-L" value="L">
+              <input type="radio" class="modal-order__input modal-order__input--size-l" name="product-size" id="size-L">
               <label class="modal-order__label" for="size-L">
-                <span class="modal-order__label--size">L</span>
+                <span class="modal-order__size">L</span>
               </label>
             </div>
             <button type="button" class="button modal-order__add" name="button">Добавить</button>
-          </div>
-        </form>
+          </form>
+        </div>
+
       </div>
     </div>
 

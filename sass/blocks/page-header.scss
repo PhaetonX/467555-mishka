@@ -9,145 +9,144 @@
       flex-wrap: wrap;
     }
   }
+}
 
-  &__logo {
-    display: block;
+.page-header__logo {
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  height: 35px;
+  text-align: center;
+
+  order: 1;
+
+  @media (min-width: $tablet-width) {
     margin-top: 21px;
-    margin-bottom: 21px;
-    height: 35px;
-    text-align: center;
+    margin-bottom: 10px;
 
-    order: 1;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 21px;
-      margin-bottom: 10px;
-
-      &:hover,
-      &:focus {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
     }
 
-    @media (min-width: $desktop-width) {
-      margin-top: 9px;
-      margin-right: 59px;
-
-      order: 2;
+    &:active {
+      opacity: 0.3;
     }
   }
 
-  &__site-menu--closed {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    margin-top: 9px;
+    margin-right: 59px;
+
+    order: 2;
+  }
+}
+
+.page-header__site-menu--closed {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__user-menu--closed {
+  display: none;
+}
+
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
   }
 
-  &__user-menu--closed {
+  @media (min-width: $desktop-width) {
+    width: 148px;
+    height: 73px;
+  }
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 10px;
+  right: 31px;
+  width: 20px;
+  height: 14px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-
-  &__logo-image {
-    width: 86px;
-    height: 35px;
-
-    @media (min-width: $tablet-width) {
-      width: 113px;
-      height: 46px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 148px;
-      height: 73px;
-    }
-  }
-
-  &__toggle {
-    position: absolute;
-    top: 10px;
+  &--closed {
+    top: 7px;
     right: 31px;
-    width: 20px;
-    height: 14px;
-    border: none;
-    background-color: transparent;
-    background-image: url("../img/icon-menu-open.svg");
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    &--closed {
-      top: 7px;
-      right: 31px;
-      width: 21px;
-      height: 21px;
-      background-image: url("../img/icon-menu-close.svg");
-    }
-
-    &--no-js {
-      display: none;
-    }
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-menu-close.svg");
   }
 
-  &__delivery {
-    z-index: 1;
+  &--no-js {
     display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-      margin-top: 18px;
-      max-width: 350px;
-      color: $grey-68;
-      text-transform: none;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 15px;
-      line-height: 24px;
-
-      order: 4;
-
-      @media (min-width: $desktop-width) {
-        margin-top: 20px;
-      }
-    }
   }
+}
 
-  &__nav {
-    @media (min-width: $tablet-width) {
-      order: 3;
-    }
+.page-header__delivery {
+  z-index: 1;
+  display: none;
 
-    @media (min-width: $desktop-width) {
-      order: 1;
-    }
-  }
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 18px;
+    max-width: 350px;
+    color: $grey-68;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
 
-  &__user-menu {
-    &--no-js {
-      display: block;
-    }
-
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
-
-    @media (min-width: $desktop-width) {
-      order: 3;
-    }
-  }
-
-  &__product-stock {
     order: 4;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    order: 3;
   }
 
-  &__site-menu {
-    &--no-js {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.page-header__user-menu {
+  &--no-js {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.page-header__product-stock {
+  order: 4;
+}
+
+.page-header__site-menu {
+  &--no-js {
+    display: block;
   }
 }

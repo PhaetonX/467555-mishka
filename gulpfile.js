@@ -57,10 +57,9 @@ gulp.task("images", function () {
   .pipe(gulp.dest("img"));
 });
 
-gulp.task("webp", function() {
-  return gulp.scr("img/**/*.{png,jpg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("img"));
+gulp.task("webp", function () {
+  return gulp.src("img/**/*.{png,jpg}")
+    .pipe(gulp.dest("img"));
 });
 
 
