@@ -102,14 +102,6 @@
   }
 }
 
-.contacts__info {
-  order: 1;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 36px;
-  }
-}
-
 .contacts__item {
   display: flex;
   justify-content: space-between;
