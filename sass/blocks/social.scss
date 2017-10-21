@@ -20,6 +20,10 @@
     border: none;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 116px;
+  }
+
 
   &__item {
     margin-right: 40px;

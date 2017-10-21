@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 73px;
+    padding-bottom: 78px;
   }
 
   & .container {
@@ -26,6 +26,18 @@
       background: url("../img/review@1x.jpg") no-repeat;
 
       flex-wrap: wrap;
+
+      &::after {
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        width: 768px;
+        height: 17px;
+        background-image: url(../img/bg-zigzag-line.svg);
+        background-size: auto 17px;
+        background-repeat: repeat-x;
+        content: "";
+      }
     }
 
     @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
@@ -41,7 +53,7 @@
 
       &::after {
         position: absolute;
-        bottom: 0;
+        bottom: -7px;
         left: 50px;
         width: 1050px;
         height: 23px;
@@ -64,6 +76,10 @@
       padding-bottom: 45px;
 
       order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 49px;
     }
   }
 
@@ -91,7 +107,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       width: 770px;
     }
   }
@@ -108,6 +124,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 2px;
       font-size: 17px;
       line-height: 24px;
     }
@@ -166,10 +183,6 @@
       padding: 0;
       width: 50%;
       border: none;
-    }
-
-    &-next {
-      padding-right: 0;
     }
   }
 

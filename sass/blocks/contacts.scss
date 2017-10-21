@@ -1,6 +1,6 @@
 .contacts {
   margin-top: 70px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -56,7 +56,7 @@
     order: 1;
 
     @media (min-width: $desktop-width) {
-      padding-top: 34px;
+      padding-top: 36px;
     }
   }
 
@@ -80,7 +80,33 @@
     }
   }
 
-  &__item-text {
+  // &__item-text {
+  //   color: $grey-68;
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   font-family: $open-sans;
+  //   line-height: 30px;
+  // 
+  //   @media (min-width: $tablet-width) {
+  //     font-size: 17px;
+  //   }
+  // }
+
+  // &__item-name {
+  //   @media (min-width: $tablet-width) {
+  //     padding-right: 23px;
+  //   }
+  // }
+
+  // &__item-value {
+  //   width: 183px;
+  // 
+  //   @media (min-width: $tablet-width) {
+  //     width: 258px;
+  //   }
+  // }
+
+  &__text {
     color: $grey-68;
     font-weight: 400;
     font-size: 15px;
@@ -90,19 +116,19 @@
     @media (min-width: $tablet-width) {
       font-size: 17px;
     }
-  }
 
-  &__item-name {
-    @media (min-width: $tablet-width) {
-      padding-right: 23px;
+    &--name {
+      @media (min-width: $tablet-width) {
+        padding-right: 23px;
+      }
     }
-  }
 
-  &__item-value {
-    width: 183px;
+    &--value {
+      width: 183px;
 
-    @media (min-width: $tablet-width) {
-      width: 258px;
+      @media (min-width: $tablet-width) {
+        width: 258px;
+      }
     }
   }
 
@@ -118,6 +144,10 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 3px;
     }
   }
 
@@ -215,6 +245,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
       font-size: 53px;
       line-height: 57px;
     }

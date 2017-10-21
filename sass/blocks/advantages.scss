@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   & .page-subtitle {
@@ -44,7 +44,7 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 63px;
-      margin-bottom: 80px;
+      margin-bottom: 79px;
       padding: 0;
       padding-top: 30px;
       width: 270px;
@@ -73,11 +73,16 @@
 
       &:nth-of-type(6) {
         order: 6;
+
+        // @media (min-width: $desktop-width) {
+        //   margin-bottom: 0;
+        // }
       }
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 80px;
+      margin-right: 83px;
+      margin-bottom: 81px;
     }
   }
 

@@ -73,6 +73,7 @@
     padding-left: $mobile-padding;
     width: 100%;
     background-color: $downy;
+
     color: $white;
     text-decoration: none;
     letter-spacing: 0;
@@ -92,13 +93,13 @@
       fill: #29a592;
     }
 
+
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
 
     &:active .product-menu__icon {
       // opacity: 0.3;
-
       fill: #44c0aa;
     }
 

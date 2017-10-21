@@ -163,10 +163,8 @@
       }
     }
   }
-}
 
-.product-preview__add-to-basket {
-  &--icon-cart {
+  &__icon {
     opacity: 0.2;
 
     &:hover,
