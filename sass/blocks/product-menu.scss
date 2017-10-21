@@ -73,7 +73,6 @@
     padding-left: $mobile-padding;
     width: 100%;
     background-color: $downy;
-
     color: $white;
     text-decoration: none;
     letter-spacing: 0;
@@ -89,7 +88,6 @@
 
     &:hover .product-menu__icon {
       top: 20px;
-      // opacity: 0.7;
       fill: #29a592;
     }
 
@@ -99,7 +97,6 @@
     }
 
     &:active .product-menu__icon {
-      // opacity: 0.3;
       fill: #44c0aa;
     }
 
