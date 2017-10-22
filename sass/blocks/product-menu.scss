@@ -30,7 +30,7 @@
     }
   }
 
-  & .container {
+  .container {
     padding-right: 0;
     padding-left: 0;
 
@@ -39,118 +39,118 @@
       padding-left: $tablet-padding;
     }
   }
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.product-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: row;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
 
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+  }
+}
+
+.product-menu__item {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
   }
 
-  &__item {
-    position: relative;
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 334px;
-    }
+.product-menu__link {
+  display: block;
+  padding-top: 25px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-left: $mobile-padding;
+  width: 100%;
+  background-color: $downy;
+  color: $white;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 19px;
+  font-family: $open-sans;
+  line-height: 24px;
 
-    @media (min-width: $desktop-width) {
-      width: 525px;
-    }
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 35px;
   }
 
-  &__link {
+  &:hover .product-menu__icon {
+    top: 20px;
+    fill: #29a592;
+  }
+
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active .product-menu__icon {
+    fill: #44c0aa;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    padding-left: 37px;
+  }
+
+  &-text {
     display: block;
-    padding-top: 25px;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    padding-left: $mobile-padding;
-    width: 100%;
-    background-color: $downy;
-    color: $white;
-    text-decoration: none;
-    letter-spacing: 0;
-    font-weight: 700;
-    font-size: 19px;
-    font-family: $open-sans;
-    line-height: 24px;
-
-    &:hover {
-      margin-top: -5px;
-      padding-bottom: 35px;
-    }
-
-    &:hover .product-menu__icon {
-      top: 20px;
-      fill: #29a592;
-    }
-
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
-
-    &:active .product-menu__icon {
-      fill: #44c0aa;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-top: 28px;
-      padding-left: 37px;
-    }
-
-    &-text {
-      display: block;
-      width: 130px;
-    }
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
+    width: 130px;
   }
 
-  &__link--color-lighter {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--color-lighter {
     background-color: $downy;
   }
 
-  &__link--color-darker {
+  &--color-darker {
     background-color: $fountain;
   }
+}
 
-  &__icon {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    opacity: 0.5;
-    fill: #3bb09d;
+.product-menu__icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  fill: #3bb09d;
 
-    &--interior {
-      right: 36px;
+  &--interior {
+    right: 36px;
 
-      @media (min-width: $tablet-width) {
-        top: 29px;
-      }
-    }
-
-    &--toy {
-      top: 19px;
-      right: 27px;
-
-      @media (min-width: $tablet-width) {
-        top: 31px;
-        right: 33px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 29px;
     }
   }
 
-  &__title {
-    @include visually-hidden();
+  &--toy {
+    top: 19px;
+    right: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 33px;
+    }
   }
+}
+
+.product-menu__title {
+  @include visually-hidden();
 }

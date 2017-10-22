@@ -1,7 +1,7 @@
 .page-footer {
   background-color: $seashell;
 
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -12,33 +12,37 @@
       flex-wrap: wrap;
     }
   }
+}
 
-  &__logo {
-    display: none;
+.page-footer__logo-ally {
+  @include visually-hidden();
+}
 
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
+.page-footer__logo {
+  display: none;
 
-    @media (min-width: $desktop-width) {
-      margin-top: -9px;
-    }
-
-    &-image {
-      width: 102px;
-      height: 34px;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
-  &__icon {
-    &:hover,
-    &:focus {
-      fill: $downy;
-    }
+  @media (min-width: $desktop-width) {
+    margin-top: -9px;
+  }
 
-    &:active {
-      opacity: 0.3;
-      fill: $downy;
-    }
+  &-image {
+    width: 102px;
+    height: 34px;
+  }
+}
+
+.page-footer__icon {
+  &:hover,
+  &:focus {
+    fill: $downy;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $downy;
   }
 }

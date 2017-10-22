@@ -16,12 +16,18 @@
     padding-left: $desktop-padding;
     width: $desktop-width;
   }
+}
 
-  &--content {
+.container__content {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-right: $desktop-padding;
+    padding-left: 224px;
+  }
+
+  &--week-product {
     @media (min-width: $desktop-width) {
-      margin: 0 auto;
-      padding-right: $desktop-padding;
-      padding-left: 224px;
+      padding-left: 96px;
     }
   }
 }

@@ -10,50 +10,50 @@
 
     flex-wrap: wrap;
   }
+}
 
-  &__link {
-    padding-top: 26px;
-    padding-bottom: 28px;
-    width: 100%;
+.site-menu__link {
+  padding-top: 26px;
+  padding-bottom: 28px;
+  width: 100%;
 
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-right: 35px;
-      padding: 0;
-      padding-top: 20px;
-      font-size: 15px;
-      line-height: 24px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
 
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-right: 33px;
+    padding-bottom: 33px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &--catalog {
     @media (min-width: $desktop-width) {
-      z-index: 1;
-      margin: 0;
-      padding: 0;
-      padding-top: 30px;
-      padding-right: 33px;
-      padding-bottom: 33px;
-      font-size: 17px;
-      line-height: 24px;
+      border-right: 1px solid $grey;
     }
+  }
 
-    &--catalog {
-      @media (min-width: $desktop-width) {
-        border-right: 1px solid $grey;
-      }
-    }
-
-    &--order {
-      @media (min-width: $desktop-width) {
-        padding-left: 35px;
-      }
+  &--order {
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
     }
   }
 }

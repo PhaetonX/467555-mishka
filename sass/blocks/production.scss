@@ -9,7 +9,7 @@
     margin-bottom: 108px;
   }
 
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
@@ -23,99 +23,6 @@
       height: 455px;
 
       flex-wrap: wrap;
-    }
-  }
-
-  &__title {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 11px;
-    padding-left: 90px;
-    border-top: 1px solid $grey;
-    border-right: 1px solid $grey;
-    border-left: 1px solid $grey;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 23px;
-      padding-left: 105px;
-      border-left: none;
-
-      order: 2;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
-      padding-top: 78px;
-      padding-bottom: 15px;
-      padding-left: 77px;
-      width: 367px;
-    }
-  }
-
-  &__title-text {
-    font-weight: 700;
-    font-size: 17px;
-    font-family: $open-sans;
-    line-height: 24px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 20px;
-      width: 176px;
-    }
-  }
-
-  &__icon {
-    position: absolute;
-    top: 28px;
-    left: 32px;
-    fill: $downy;
-
-    @media (min-width: $tablet-width) {
-      top: 35px;
-      left: 41px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 41px;
-      left: 78px;
-    }
-  }
-
-  &__play {
-    position: absolute;
-    top: 36px;
-    left: 79px;
-    width: 101px;
-    height: 77px;
-    background: url("../img/icon-play.svg") no-repeat 50% 50%;
-    background-size: 101px 77px;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      top: 192px;
-      left: 283px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 191px;
-      left: 291px;
-    }
-
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
-
-    &:active {
-      opacity: 0.3;
-      transform: scale(0.8);
     }
   }
 }
@@ -216,5 +123,98 @@
     padding: 0;
     padding-bottom: 45px;
     width: auto;
+  }
+}
+
+.production__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 90px;
+  border-top: 1px solid $grey;
+  border-right: 1px solid $grey;
+  border-left: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 105px;
+    border-left: none;
+
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 78px;
+    padding-bottom: 15px;
+    padding-left: 77px;
+    width: 367px;
+  }
+}
+
+.production__title-text {
+  font-weight: 700;
+  font-size: 17px;
+  font-family: $open-sans;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    width: 176px;
+  }
+}
+
+.production__icon {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  fill: $downy;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 78px;
+  }
+}
+
+.production__play {
+  position: absolute;
+  top: 36px;
+  left: 79px;
+  width: 101px;
+  height: 77px;
+  background: url("../img/icon-play.svg") no-repeat 50% 50%;
+  background-size: 101px 77px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 192px;
+    left: 283px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 191px;
+    left: 291px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8);
   }
 }

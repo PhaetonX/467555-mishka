@@ -41,13 +41,13 @@
     width: 570px;
   }
 
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       width: 455px;
     }
   }
 
-  & .page-subtitle {
+  .page-subtitle {
     margin-bottom: 5px;
     padding-top: 10px;
     text-align: center;
@@ -59,7 +59,7 @@
     }
   }
 
-  & .text {
+  .text {
     margin-bottom: 27px;
     text-align: center;
 
@@ -70,58 +70,58 @@
       line-height: 30px;
     }
   }
+}
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
+.modal-order__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.modal-order__input {
+  display: none;
+}
+
+.modal-order__label {
+  display: flex;
+  width: 80px;
+  height: 50px;
+  border: 1px solid $grey;
+
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
   }
 
-  &__input {
-    display: none;
+  &:hover {
+    border: 2px solid $grey;
   }
+}
 
-  &__label {
-    display: flex;
-    width: 80px;
-    height: 50px;
-    border: 1px solid $grey;
+.modal-order__size {
+  margin: 0 auto;
+  color: $grey-68;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: $open-sans;
+  line-height: 16px;
 
-    flex-wrap: wrap;
+  align-self: center;
+}
 
-    @media (min-width: $tablet-width) {
-      width: 115px;
-    }
-
-    &:hover {
-      border: 2px solid $grey;
-    }
-
-    &--size {
-      margin: 0 auto;
-      color: $grey-68;
-      letter-spacing: 0;
-      font-weight: 700;
-      font-size: 17px;
-      font-family: $open-sans;
-      line-height: 16px;
-
-      align-self: center;
-    }
-  }
-
-  &__add {
-    padding: 18px;
-    width: 100%;
-    border: none;
-    background-color: $downy;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 17px;
-    line-height: 16px;
-  }
+.modal-order__add {
+  padding: 18px;
+  width: 100%;
+  border: none;
+  background-color: $downy;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
 }
 
 .modal-order__input--size-s:checked + .modal-order__label[for="size-s"] {

@@ -11,7 +11,7 @@
     margin-bottom: 4px;
   }
 
-  & .page-subtitle {
+  .page-subtitle {
     margin-bottom: 55px;
 
     @media (min-width: $tablet-width) {
@@ -23,93 +23,93 @@
       margin-top: 48px;
     }
   }
+}
 
-  &__list {
-    margin: 0;
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 63px;
+    margin-bottom: 79px;
     padding: 0;
-    list-style: none;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: row;
-
-      flex-wrap: wrap;
-    }
-  }
-
-  &__item {
-    position: relative;
     padding-top: 30px;
-    padding-bottom: 53px;
+    width: 270px;
+    font-size: 20px;
+    line-height: 22px;
 
-    @media (min-width: $tablet-width) {
-      margin-right: 63px;
-      margin-bottom: 79px;
-      padding: 0;
-      padding-top: 30px;
-      width: 270px;
-      font-size: 20px;
-      line-height: 22px;
-
-      &:nth-of-type(1) {
-        order: 1;
-      }
-
-      &:nth-of-type(2) {
-        order: 3;
-      }
-
-      &:nth-of-type(3) {
-        order: 5;
-      }
-
-      &:nth-of-type(4) {
-        order: 2;
-      }
-
-      &:nth-of-type(5) {
-        order: 4;
-      }
-
-      &:nth-of-type(6) {
-        order: 6;
-      }
+    &:nth-of-type(1) {
+      order: 1;
     }
 
-    @media (min-width: $desktop-width) {
-      margin-right: 83px;
-      margin-bottom: 81px;
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 5;
+    }
+
+    &:nth-of-type(4) {
+      order: 2;
+    }
+
+    &:nth-of-type(5) {
+      order: 4;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
     }
   }
 
-  &__icon {
-    position: absolute;
-    top: -25px;
-    left: 7px;
-    fill: $downy;
+  @media (min-width: $desktop-width) {
+    margin-right: 83px;
+    margin-bottom: 81px;
+  }
+}
 
-    &--money {
-      top: -23px;
-      left: 0;
-    }
+.advantages__icon {
+  position: absolute;
+  top: -25px;
+  left: 7px;
+  fill: $downy;
 
-    &--heart {
-      top: -18px;
-    }
+  &--money {
+    top: -23px;
+    left: 0;
+  }
 
-    &--ball {
-      top: -21px;
-      left: 3px;
-    }
+  &--heart {
+    top: -18px;
+  }
 
-    &--rocket {
-      top: -19px;
-      left: -6px;
-    }
+  &--ball {
+    top: -21px;
+    left: 3px;
+  }
 
-    &--gift {
-      top: -22px;
-      left: 3px;
-    }
+  &--rocket {
+    top: -19px;
+    left: -6px;
+  }
+
+  &--gift {
+    top: -22px;
+    left: 3px;
   }
 }
