@@ -41,13 +41,13 @@
     width: 570px;
   }
 
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       width: 455px;
     }
   }
 
-  & .page-subtitle {
+  .page-subtitle {
     margin-bottom: 5px;
     padding-top: 10px;
     text-align: center;
@@ -59,7 +59,7 @@
     }
   }
 
-  & .text {
+  .text {
     margin-bottom: 27px;
     text-align: center;
 

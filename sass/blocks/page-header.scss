@@ -1,5 +1,5 @@
 .page-header {
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;

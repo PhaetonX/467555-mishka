@@ -9,7 +9,7 @@
     margin-bottom: 108px;
   }
 
-  & .container {
+  .container {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
